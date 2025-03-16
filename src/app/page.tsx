@@ -1,12 +1,12 @@
 "use client";
 // import Loader from "@/component/Loader";
 import ShortInfo from "@/component/ShortInfo";
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // import TextAnimation from "@/component/TextWipe";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -22,31 +22,31 @@ import nhs from "@/lottie-files/NHS Showreel.json";
 
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
-  useEffect(() => {
-    gsap.from(".box", {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-      stagger: 0.3,
-      scrollTrigger: {
-        trigger: ".box",
-        start: "top 80%", // Starts animation when element is 80% visible
-        end: "bottom 20%", // Ends when element reaches 20%
-        toggleActions: "play none none none", // Controls animation behavior
-        markers: true, // For debugging (remove in production)
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from(".box", {
+  //     opacity: 0,
+  //     y: 100,
+  //     duration: 1,
+  //     stagger: 0.3,
+  //     scrollTrigger: {
+  //       trigger: ".box",
+  //       start: "top 80%", // Starts animation when element is 80% visible
+  //       end: "bottom 20%", // Ends when element reaches 20%
+  //       toggleActions: "play none none none", // Controls animation behavior
+  //       markers: false, // For debugging (remove in production)
+  //     },
+  //   });
+  // }, []);
 
-  useGSAP(() => {
-    gsap.from(".exper", {
-      x: 400,
-      opacity: 0.4,
-      duration: 0.5,
-      // ease: "bounce.in",
-      ease: "power1.in",
-    });
-  }, []);
+  // useGSAP(() => {
+  //   gsap.from(".exper", {
+  //     x: 400,
+  //     opacity: 0.4,
+  //     duration: 0.5,
+  //     // ease: "bounce.in",
+  //     ease: "power1.in",
+  //   });
+  // }, []);
 
   return (
     <main className="font-roboto-mono">

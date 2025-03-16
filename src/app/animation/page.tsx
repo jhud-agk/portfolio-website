@@ -1,27 +1,26 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import SplitType from "split-type";
+// import { useGSAP } from "@gsap/react";
+// import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HorizontalScroll = () => {
-  const boxesRef = useRef<HTMLDivElement[]>([]);
-  const [counter, setCounter] = useState(0);
+  // const boxesRef = useRef<HTMLDivElement[]>([]);
+  // const [counter, setCounter] = useState(0);
 
-  function updateCounter() {
-    if (counter === 100) {
-      return;
-    }
-    setCounter(counter + Math.floor(Math.random() * 10) + 1);
-    if (counter > 100) {
-      setCounter(100);
-    }
-  }
+  // function updateCounter() {
+  //   if (counter === 100) {
+  //     return;
+  //   }
+  //   setCounter(counter + Math.floor(Math.random() * 10) + 1);
+  //   if (counter > 100) {
+  //     setCounter(100);
+  //   }
+  // }
 
   // useEffect(() => {
   //   if (counter <= 99) {
@@ -31,65 +30,65 @@ const HorizontalScroll = () => {
   //   }
   // }, [counter]);
 
-  useEffect(() => {
-    // updateCounter();
-    // const delay = Math.floor(Math.random() * 200) + 50;
-    setTimeout(updateCounter, 100);
-  }, [counter]);
+  // useEffect(() => {
+  // updateCounter();
+  // const delay = Math.floor(Math.random() * 200) + 50;
+  //   setTimeout(updateCounter, 100);
+  // }, [counter]);
 
-  useGSAP(() => {
-    if (counter >= 70) {
-      gsap.to(boxesRef.current, {
-        height: 0,
-        // duration: 0.5,
-        delay: 3.5,
-        stagger: {
-          amount: 0.2,
-        },
-        ease: "power4.inOut",
-      });
-    }
+  // useGSAP(() => {
+  //   if (counter >= 70) {
+  //     gsap.to(boxesRef.current, {
+  //       height: 0,
+  //       // duration: 0.5,
+  //       delay: 3.5,
+  //       stagger: {
+  //         amount: 0.2,
+  //       },
+  //       ease: "power4.inOut",
+  //     });
+  //   }
 
-    gsap.to("#counter", {
-      delay: 3.5,
-      opacity: 0,
-      display: "none",
-    });
-  }, [counter]);
+  //   gsap.to("#counter", {
+  //     delay: 3.5,
+  //     opacity: 0,
+  //     display: "none",
+  //   });
+  // }, [counter]);
 
   const textRef = useRef(null);
 
-  useEffect(() => {
-    const texts = new SplitType(textRef.current!, { types: "chars" });
-    // gsap.fromTo(
-    //   texts.chars,
-    //   { y: "100%", opacity: 0, backgroundColor: "black", color: "white" },
-    //   {
-    //     y: "0%",
-    //     opacity: 1,
-    //     duration: 1,
-    //     stagger: 0.1,
-    //     ease: "power2.out",
-    //   }
-    // );
+  // useEffect(() => {
+  //   const texts = new SplitType(textRef.current!, { types: "chars" });
+  // gsap.fromTo(
+  //   texts.chars,
+  //   { y: "100%", opacity: 0, backgroundColor: "black", color: "white" },
+  //   {
+  //     y: "0%",
+  //     opacity: 1,
+  //     duration: 1,
+  //     stagger: 0.1,
+  //     ease: "power2.out",
+  //   }
+  // );
 
-    gsap.fromTo(
-      texts.chars,
-      {
-        background: "black",
-        opacity: 0,
-        color: "white",
-      },
+  //   gsap.fromTo(
+  //     texts.chars,
+  //     {
+  //       background: "black",
+  //       opacity: 0,
+  //       color: "white",
+  //     },
 
-      {
-        background: "none",
-        opacity: 1,
-        duration: 1,
-        stagger: 0.1,
-        color: "black",
-      }
-    );
-  }, []);
+  //     {
+  //       background: "none",
+  //       opacity: 1,
+  //       duration: 1,
+  //       stagger: 0.1,
+  //       color: "black",
+  //     }
+  //   );
+  // }, []);
 
   return (
     <div>
@@ -107,7 +106,7 @@ const HorizontalScroll = () => {
           id="counter"
           className="absolute text-white text-[200px] top-[30px] right-[200px] font-bold"
         >
-          {counter}
+          {/* {counter} */}
         </p>
         {/* {[...Array(6)].map((_, i) => (
           <div
