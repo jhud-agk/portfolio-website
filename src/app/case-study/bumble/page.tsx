@@ -1,8 +1,10 @@
 //
 
 import BorderBody from "@/component/BorderBody";
+import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import React from "react";
+import { HiArrowRight } from "react-icons/hi2";
 
 function Bumble() {
   return (
@@ -81,7 +83,7 @@ function Bumble() {
             subscriptions and expanding the user base.
           </p>
           <p className="black_text mt-3">
-            The experiment's main goal is to improve the profile-sharing
+            The experiment&apos;s main goal is to improve the profile-sharing
             experience, making it easier to recommend profiles and encouraging
             more sharing. This can lead to increased referrals, more new users,
             and higher Average Revenue Per User (ARPU) on both Android and iOS
@@ -91,6 +93,110 @@ function Bumble() {
           <div className="h-[500px] bg-amber-300 m-auto sm:w-[481px] mt-10"></div>
         </div>
       </BorderBody>
+      <BorderBody>
+        <div className="sm:flex justify-between fade_text">
+          <p>DESIGN METHODOLOGY & PROCESS</p>
+          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+            <div className="">
+              <p>Desk Research </p>
+              <p>
+                I Conducted secondary research analysing apps like ASOS,
+                Net-A-Porter, Bookings.com, and AXS to understand feature
+                implementation from entry to completion while noting overall
+                user experience.
+              </p>
+            </div>
+            <div className="mt-5">
+              <p>Team Collaboration</p>
+              <p>
+                We Analysed findings to define user stories, flows, and
+                jobs-to-be-done. Brainstormed potential solutions as a team.
+              </p>
+            </div>
+            <div className="mt-5">
+              <p>Crazy 8 Workshop </p>
+              <p>
+                We Visualised multiple design ideas to explore diverse
+                solutions.
+              </p>
+            </div>
+            <div className="mt-5">
+              <p>Wireframes</p>
+              <p>
+                I Created 5 design directions with pros, cons, and
+                recommendations. I Conducted an impact assessment and
+                prioritisation mapping for all options.
+              </p>
+            </div>
+            <div className="mt-5">
+              <p>Decision Making</p>
+              <p>
+                Used dot voting to select the best solution and I developed a
+                high-fidelity interactive prototype.
+              </p>
+            </div>
+            <div className="mt-5">
+              <p>User Testing</p>
+              <p>
+                Tested the prototype with 10 participants, identified and
+                resolved issues as a team, and redesigned the solution to
+                rectify issues.
+              </p>
+            </div>
+
+            <div className="mt-5">
+              <p>Focus Group</p>
+              <p>
+                To gain a deeper understanding of the concerns and preferences
+                related to gender representation during our testing session, we
+                conducted a focus group with 10 participants.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+      </BorderBody>
+
+      <BorderBody className="">
+        <div className="sm:flex justify-between fade_text">
+          <p>RESULTS AND IMPACT</p>
+          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+            <div className="">
+              <p className="font-roboto-mono text-lg">906,000+ </p>
+              <p className="mt-3">
+                Profiles shared — Sparked meaningful interactions and fostered
+                new relationships.
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <p className="font-roboto-mono text-lg">227,000</p>
+              <p className="mt-3">
+                New accounts were created — Highlighted the effectiveness of
+                shared connections in driving platform growth.
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <p className="font-roboto-mono text-lg">4%</p>
+              <p className="mt-3">
+                Increase in ARPU — Demonstrated how premium features and in-app
+                purchases contribute to a richer user experience and boosted
+                revenue.
+              </p>
+            </div>
+
+            <div className="mt-10 flex items-center gap-3 ">
+              <p className="text-[#8A8A8A] text-xs">
+                READ FULL CASE STUDY ON NOTION
+              </p>
+              <HiArrowRight size={16} />
+            </div>
+          </div>
+        </div>
+      </BorderBody>
+      <Footer />
     </main>
   );
 }

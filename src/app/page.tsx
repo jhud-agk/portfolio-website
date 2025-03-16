@@ -10,10 +10,15 @@ import { useGSAP } from "@gsap/react";
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
-import animeation1 from "@/lottie-files/wireframe-2 (transaction).json";
-import bumble1 from "@/lottie-files/Bumble-1.json";
-import bumble2 from "@/lottie-files/Bumble interaction.json";
+// import animeation1 from "@/lottie-files/wireframe-2 (transaction).json";
+// import bumble1 from "@/lottie-files/Bumble-1.json";
+// import bumble2 from "@/lottie-files/Bumble interaction.json";
 import bumble3 from "@/lottie-files/Bumble-2.json";
+import squad from "@/lottie-files/Squad-1.json";
+import squad2 from "@/lottie-files/Squad 2.0 -1.json";
+// import nhs2 from "@/lottie-files/NHS - 2.json";
+import nhs from "@/lottie-files/NHS Showreel.json";
+// import Footer from "@/component/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
@@ -92,9 +97,9 @@ function Home() {
             role="Product designer and researcher"
             period="Q3 2022 - Q1 2023"
             className="lg:grow sm:w-1/2 w-full sm:mt-0 mt-16"
-            imgClass="w-full lg:h-[600px] h-[386px]"
+            imgClass="w-full"
             textClass="lg:w-[47%]"
-            animation={bumble1}
+            animation={squad}
           />
         </section>
         <section className="sm:flex sm:mt-[150px] justify-between">
@@ -106,6 +111,7 @@ function Home() {
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
             textClass="lg:w-[80%]"
+            animation={squad2}
           />
           <ShortInfo
             brand="NHS Digital"
@@ -115,6 +121,7 @@ function Home() {
             imgClass="lg:h-[500px] h-[400px] w-full box"
             textClass="lg:w-[80%]"
             role="Product designer and researcher"
+            animation={nhs}
           />
           <ShortInfo
             brand="Our Dorset Digital"
@@ -127,6 +134,7 @@ function Home() {
           />
         </section>
       </BorderBody>
+      {/* <Footer /> */}
     </main>
   );
 }

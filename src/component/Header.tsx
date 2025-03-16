@@ -5,7 +5,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className=" flex justify-between p-4">
+    <header className=" flex justify-between px-4">
       <p className="fade_text" id="">
         {/* <TextAnimation text={"JUDEEJIKE_LDN 01.03 PM"} /> */}
         JUDEEJIKE_LDN 01.03 PM
