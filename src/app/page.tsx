@@ -20,7 +20,7 @@ import squad2 from "@/lottie-files/Squad 2.0 -1.json";
 import nhs from "@/lottie-files/NHS Showreel.json";
 // import Footer from "@/component/Footer";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 function Home() {
   // useEffect(() => {
   //   gsap.from(".box", {
