@@ -90,6 +90,7 @@ function Home() {
             className="lg:w-[445px] sm:w-1/2 w-full"
             imgClass="h-[386px] lg:w-[515px] w-full"
             animation={bumble3}
+            url="/bumble"
           />
           <ShortInfo
             brand="Squad"
@@ -100,6 +101,7 @@ function Home() {
             imgClass="w-full"
             textClass="lg:w-[47%]"
             animation={squad}
+            url="/squad1"
           />
         </section>
         <section className="sm:flex sm:mt-[150px] justify-between">
@@ -112,6 +114,7 @@ function Home() {
             imgClass="lg:h-[500px] h-[400px] w-full box"
             textClass="lg:w-[80%]"
             animation={squad2}
+            url="/squad2"
           />
           <ShortInfo
             brand="NHS Digital"
@@ -122,6 +125,7 @@ function Home() {
             textClass="lg:w-[80%]"
             role="Product designer and researcher"
             animation={nhs}
+            url="/nsh"
           />
           <ShortInfo
             brand="Our Dorset Digital"
@@ -131,6 +135,7 @@ function Home() {
             imgClass="lg:h-[500px] h-[400px] w-full box"
             textClass="lg:w-[80%]"
             role="Product designer and researcher"
+            url="/nhs2"
           />
         </section>
       </BorderBody>

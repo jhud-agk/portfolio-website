@@ -13,7 +13,7 @@ function Header() {
       <div className="flex phone:gap-10 gap-3 fade_text">
         <div className="flex smm:flex-row flex-col smm:gap-10 fade_text">
           <Link href={""}>CASE STUDIES</Link>
-          <Link href={""}>ABOUT</Link>
+          <Link href={"/about"}>ABOUT</Link>
           <Link href={""}>UX RESOURCE</Link>
         </div>
         <Link href={""}>LETS TALK</Link>

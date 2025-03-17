@@ -1,6 +1,7 @@
 //
 "use client";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import React from "react";
 // import Lottie from "lottie-react";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
@@ -13,11 +14,15 @@ type ShortType = {
   imgClass: string;
   textClass?: string;
   animation?: unknown;
+  url?: string;
 };
 
 function ShortInfo(props: ShortType) {
   return (
-    <div className={`${props.className} black_text`}>
+    <Link
+      href={`/case-study${props.url}`}
+      className={`${props.className} black_text`}
+    >
       <div className={`${props.imgClass}  bg-amber-400`}>
         <Lottie
           animationData={props.animation}
@@ -31,7 +36,7 @@ function ShortInfo(props: ShortType) {
         <p className="mt-2">{props.role}</p>
         <p>{props.period}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 
