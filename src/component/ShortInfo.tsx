@@ -1,7 +1,9 @@
 //
 "use client";
+import dynamic from "next/dynamic";
 import React from "react";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 type ShortType = {
   brand: string;
   info: string;
