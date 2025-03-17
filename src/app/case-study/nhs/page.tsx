@@ -33,7 +33,7 @@ function NHS1() {
         <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
         <div className="sm:flex justify-between fade_text mt-16">
           <p>INTRODUCTION AND DETAILS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
               The experience for many users was far from what they had hoped
               for. Despite the app&apos;s promise of easier access to
@@ -94,7 +94,7 @@ function NHS1() {
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
           <p>DESIGN METHODOLOGY & PROCESS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>In-Depth Interviews and Focus Groups </p>
               <p>
@@ -147,7 +147,7 @@ function NHS1() {
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
           <p className="uppercase">Recommendations for the NHS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>Adopt User-Centered Design (UCD)</p>
               <p>
@@ -187,7 +187,7 @@ function NHS1() {
           <p className="uppercase">
             Recommendations & Potential Impact From Findings
           </p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>Enhanced Usability and Adoption</p>
               <p>

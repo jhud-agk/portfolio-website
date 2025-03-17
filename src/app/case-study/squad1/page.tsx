@@ -1,10 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 //
-
+"use client";
 import BorderBody from "@/component/BorderBody";
+import Footer from "@/component/Footer";
 import Header from "@/component/Header";
-import Link from "next/link";
 import React from "react";
 import { HiArrowRight } from "react-icons/hi2";
+import whatsapp from "@/lottie-files/WhatsApp (1).json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import squad from "@/lottie-files/Squad-1.json";
+import squad2 from "@/lottie-files/Squad-2.json";
+import squad3 from "@/lottie-files/Squad-3.json";
+import Image from "next/image";
+import gif from "../../../../public/Squad-gif.gif";
 
 function Squad1() {
   return (
@@ -29,12 +38,17 @@ function Squad1() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
-      </BorderBody>
-      <BorderBody className="">
-        <div className="sm:flex justify-between fade_text">
+        <div className="w-full mt-16">
+          <img
+            src="/squad_banner.png"
+            className="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+
+        <div className="sm:flex justify-between fade_text mt-24">
           <p>INTRODUCTION AND DETAILS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
               Due to the pandemic, small businesses in Nigeria had to move
               online to survive, using social media as their new storefront. But
@@ -88,12 +102,18 @@ function Squad1() {
             stress of complicated payment systems.
           </p>
 
-          <div className="h-[500px] bg-amber-300 m-auto sm:w-[481px] mt-10"></div>
+          <div className="h-[500px] m-auto sm:w-[481px] mt-10">
+            <Lottie
+              animationData={whatsapp}
+              loop={true}
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] m-auto">
+        <div className="sm:w-[481px] mt-[100px] m-auto">
           <p className="text-[#8A8A8A] uppercase">
             Our 6-12 Month Success Metrics
           </p>
@@ -120,15 +140,31 @@ function Squad1() {
           </ul>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+          <Lottie animationData={squad} loop={true} className="w-full h-full" />
+        </div>
+        <div className="phone:h-[646px] relative h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+          <Image
+            src={gif}
+            alt={""}
+            fill
+            className="object-cover"
+            quality={10}
+          />
+        </div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+          <Lottie
+            animationData={squad2}
+            loop={true}
+            className="w-full h-full"
+          />
+        </div>
       </BorderBody>
 
       <BorderBody className="">
         <div className="sm:flex justify-between fade_text">
           <p>DESIGN METHODOLOGY & PROCESS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>Research </p>
               <p>
@@ -182,8 +218,20 @@ function Squad1() {
           </div>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+          <Lottie
+            animationData={squad3}
+            loop={true}
+            className="w-full h-full"
+          />
+        </div>
+        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+          <img
+            src="/squad_banner.png"
+            className="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
 
         <section className=" mt-[100px]">
           <div className="sm:w-[481px] m-auto">
@@ -222,35 +270,7 @@ function Squad1() {
           </div>
         </section>
       </BorderBody>
-
-      <BorderBody className="">
-        <div className="sm:flex justify-between fade_text pb-20">
-          <p>SELECT NEXT PROJECT</p>
-          <div className="sm:w-[450px] black_text font-medium exper">
-            <div className="">
-              <Link
-                href={
-                  "Squad 2.0: Navigating Challenges, Elevating User Experiences."
-                }
-              ></Link>
-            </div>
-            <div className="mt-3">
-              <Link href={""}>
-                Reimagining Bumbles Profile Sharing Experience
-              </Link>
-            </div>
-            <div className="mt-3">
-              <Link href={""}>A UX Research Case Study on the NHS App</Link>
-            </div>
-            <div className="mt-3">
-              <Link href={""}>Usability Evaluation of Our Dorset Digital</Link>
-            </div>
-            <div className="mt-3">
-              <Link href={""}>Usability Evaluation of Our Dorset Digital</Link>
-            </div>
-          </div>
-        </div>
-      </BorderBody>
+      <Footer />
     </main>
   );
 }

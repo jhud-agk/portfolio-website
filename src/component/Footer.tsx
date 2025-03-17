@@ -9,7 +9,7 @@ function Footer() {
     <BorderBody className="">
       <div className="sm:flex justify-between fade_text pb-20">
         <p>SELECT NEXT PROJECT</p>
-        <div className="sm:w-[450px] black_text font-medium exper">
+        <div className="sm:w-[450px] black_text exper">
           <div className="">
             <Link
               href={

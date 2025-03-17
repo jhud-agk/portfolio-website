@@ -13,30 +13,30 @@ function NHS2() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between uppercase fade_text">
+        <div className="flex justify-between fade_text">
           <p>Usability Evaluation of Our Dorset Digital</p>
-          <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
+          <div className="sm:w-[450px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               Our Dorset Digital is a program focused on creating and using
               digital
             </p>
             <p>
-              and easily share a Bumble profile with someone they know,
-              encouraging participation.
+              tools to improve healthcare for Dorset residents, NHS staff, and
+              frontline teams.
             </p>
           </div>
         </div>
         <div className="block sm:hidden black_text font-medium mt-5">
           <p>
-            Recommending a friend is a free feature that lets bumble users
-            safely and easily share a Bumble profile with someone they know,
-            encouraging participation.
+            Our Dorset Digital is a program focused on creating and using
+            digital tools to improve healthcare for Dorset residents, NHS staff,
+            and frontline teams.
           </p>
         </div>
         <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
         <div className="sm:flex justify-between fade_text mt-16">
           <p>INTRODUCTION AND DETAILS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
               The website struggled to fulfil its purpose as a reliable,
               easy-to-use platform. Management claimed that users faced
@@ -94,7 +94,7 @@ function NHS2() {
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
           <p>DESIGN METHODOLOGY & PROCESS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>In-Depth Interviews and Focus Groups </p>
               <p>
@@ -145,7 +145,7 @@ function NHS2() {
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
           <p className="uppercase">Recommendations based on Insights</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>Navigation and Structure</p>
               <p>
@@ -182,7 +182,7 @@ function NHS2() {
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
           <p className="uppercase">Potential Impact From Findings</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p>
                 If the navigation challenges and content clarity issues

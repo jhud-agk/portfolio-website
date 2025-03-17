@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 //
 "use client";
 import dynamic from "next/dynamic";
@@ -15,6 +16,7 @@ type ShortType = {
   textClass?: string;
   animation?: unknown;
   url?: string;
+  image?: string;
 };
 
 function ShortInfo(props: ShortType) {
@@ -24,17 +26,22 @@ function ShortInfo(props: ShortType) {
       className={`${props.className} black_text`}
     >
       <div className={`${props.imgClass}  bg-amber-400`}>
-        <Lottie
-          animationData={props.animation}
-          loop={true}
-          className="w-full h-full"
-        />
+        {props.animation ? (
+          <Lottie
+            animationData={props.animation}
+            loop={true}
+            className="w-full h-full"
+          />
+        ) : (
+          <img src={props.image} alt="" className="object-cover" />
+        )}
       </div>
+
       <div className={`${props.textClass}`}>
         <p className="pt-3">{props.brand}</p>
         <p className="mt-1">{props.info}</p>
-        <p className="mt-2">{props.role}</p>
-        <p>{props.period}</p>
+        <p className="mt-2 text-[#8A8A8A]">{props.role}</p>
+        {/* <p>{props.period}</p> */}
       </div>
     </Link>
   );

@@ -1,10 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 //
-
+"use client";
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import React from "react";
 import { HiArrowRight } from "react-icons/hi2";
+import trans from "@/lottie-files/transaction graph.json";
+import wire from "@/lottie-files/Wireframe-1 (onboarding).json";
+import wire2 from "@/lottie-files/wireframe-2 (transaction).json";
+import squad2 from "@/lottie-files/Squad 2.0 -1.json";
+import squad2w from "@/lottie-files/Squad 2.0 - wiraframe reels.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 function Squad2() {
   return (
@@ -28,10 +36,16 @@ function Squad2() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
-        <div className="sm:flex justify-between fade_text mt-16">
+        <div className="w-full mt-16">
+          <img
+            src="/squad_banner.png"
+            className="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+        <div className="sm:flex justify-between fade_text mt-24">
           <p>INTRODUCTION AND DETAILS</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
               We launched our payment platform with big goals but didn’t meet
               them. This case study looks at why, listens to user feedback, and
@@ -81,7 +95,13 @@ function Squad2() {
             solution that helps Nigerian businesses thrive in the digital
             economy and achieve the growth they deserve.
           </p>
-          <div className="h-[500px] bg-amber-300 m-auto sm:w-[481px] mt-10"></div>
+          <div className="m-auto sm:w-[481px] mt-10">
+            <Lottie
+              animationData={trans}
+              loop={true}
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </BorderBody>
 
@@ -114,8 +134,12 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/Checkout.png" alt="" className="object-cover" />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/Onboard.png" className="object-cover" alt="" />
+        </div>
       </BorderBody>
 
       <BorderBody className="">
@@ -151,9 +175,15 @@ function Squad2() {
           </div>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+          <Lottie animationData={wire} loop={true} className="w-full h-full" />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <Lottie animationData={wire2} loop={true} className="w-full h-full" />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/First step1.png" alt="" />
+        </div>
       </BorderBody>
 
       <BorderBody className="">
@@ -171,15 +201,36 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto h-[280px] lg:w-[480px] sm:w-[85%] w-full mt-24">
+          <img
+            src="/Frame 8 1.png"
+            className="object-cover w-full h-full"
+            alt=""
+          />
+        </div>
+        <div className="bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <Lottie
+            animationData={squad2}
+            loop={true}
+            className="w-full h-full"
+          />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/First-step.png" alt="" />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <Lottie
+            animationData={squad2w}
+            loop={true}
+            className="w-full h-full"
+          />
+        </div>
       </BorderBody>
 
       <BorderBody className="">
         <div className="sm:flex justify-between fade_text">
           <p>RESULTS AND IMPACT</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
               <p className="font-roboto-mono text-lg">30,000+</p>
               <p className="mt-3">
