@@ -2,8 +2,8 @@
 // import Loader from "@/component/Loader";
 import ShortInfo from "@/component/ShortInfo";
 // import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // import TextAnimation from "@/component/TextWipe";
 // import { useGSAP } from "@gsap/react";
