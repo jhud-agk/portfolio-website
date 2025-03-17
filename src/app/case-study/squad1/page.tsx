@@ -140,7 +140,7 @@ function Squad1() {
           </ul>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
           <Lottie animationData={squad} loop={true} className="w-full h-full" />
         </div>
         <div className="phone:h-[646px] relative h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
@@ -152,7 +152,7 @@ function Squad1() {
             quality={10}
           />
         </div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <Lottie
             animationData={squad2}
             loop={true}
@@ -218,14 +218,14 @@ function Squad1() {
           </div>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
           <Lottie
             animationData={squad3}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"

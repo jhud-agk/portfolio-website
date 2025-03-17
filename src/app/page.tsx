@@ -13,8 +13,7 @@ import BorderBody from "@/component/BorderBody";
 import bumble3 from "@/lottie-files/Bumble-2.json";
 import squad from "@/lottie-files/Squad-1.json";
 import squad2 from "@/lottie-files/Squad 2.0 -1.json";
-// import nhs2 from "@/lottie-files/NHS - 2.json";
-// import nhs from "@/lottie-files/NHS Showreel.json";
+
 import nhsLanding from "@/lottie-files/NHS landing page.json";
 // import Footer from "@/component/Footer";
 

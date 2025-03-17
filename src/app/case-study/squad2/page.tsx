@@ -208,7 +208,7 @@ function Squad2() {
             alt=""
           />
         </div>
-        <div className="bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
           <Lottie
             animationData={squad2}
             loop={true}

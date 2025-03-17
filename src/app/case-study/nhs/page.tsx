@@ -1,10 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 //
-
+"use client";
+import dynamic from "next/dynamic";
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import React from "react";
 import { HiArrowRight } from "react-icons/hi2";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import nhs from "@/lottie-files/NHS Showreel.json";
+import newNhs from "@/lottie-files/New nhs.json";
+import nhs2 from "@/lottie-files/NHS - 2.json";
 
 function NHS1() {
   return (
@@ -30,8 +36,10 @@ function NHS1() {
             encouraging participation.
           </p>
         </div>
-        <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
-        <div className="sm:flex justify-between fade_text mt-16">
+        <div className="w-full mt-24">
+          <img src="/mock 1.png" alt="" />
+        </div>
+        <div className="sm:flex justify-between fade_text mt-24">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -83,13 +91,25 @@ function NHS1() {
             create solutions, test them, and make recommendations on how to
             enhance its adoption based on our findings
           </p>
-          <div className="h-[500px] bg-amber-300 m-auto sm:w-[481px] mt-10"></div>
+          <div className="h-[541px] m-auto sm:w-[324px] mt-24">
+            <img
+              src="/NHS-App-COVID-pass 1.png"
+              className="h-full w-full object-cover"
+              alt=""
+            />
+          </div>
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="phone:h-[646px] h-[400px] m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/SOL_3 1.PNG" alt="" />
+        </div>
+        <div className="phone:h-[646px] h-[400px] m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/SOL_1 1.PNG" alt="" />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-16">
+          <Lottie animationData={nhs} loop={true} className="w-full h-full" />
+        </div>
       </BorderBody>
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
@@ -141,8 +161,16 @@ function NHS1() {
             </div>
           </div>
         </div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-14"></div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+          <Lottie
+            animationData={newNhs}
+            loop={true}
+            className="w-full h-full"
+          />
+        </div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <Lottie animationData={nhs2} loop={true} className="w-full h-full" />
+        </div>
       </BorderBody>
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
@@ -183,7 +211,7 @@ function NHS1() {
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text mt-6">
           <p className="uppercase">
             Recommendations & Potential Impact From Findings
           </p>

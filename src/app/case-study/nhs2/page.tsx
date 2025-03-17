@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 //
 
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import React from "react";
-import { HiArrowRight } from "react-icons/hi2";
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function NHS2() {
   return (
@@ -33,7 +34,9 @@ function NHS2() {
             and frontline teams.
           </p>
         </div>
-        <div className="w-full sm:h-[800px] h-[400px] bg-blue-600 mt-16"></div>
+        <div className="w-full mt-24">
+          <img src="/mock-2.png" alt="" />
+        </div>
         <div className="sm:flex justify-between fade_text mt-16">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
@@ -62,6 +65,12 @@ function NHS2() {
               <p>Timeline</p>
               <p>Q4 2022 - Q1 2023</p>
             </div>
+            <div className="mt-10 flex items-center gap-3 ">
+              <p className="text-[#8A8A8A] text-xs">
+                READ FULL CASE STUDY ON NOTION
+              </p>
+              <HiMiniArrowUpRight size={16} />
+            </div>
           </div>
         </div>
       </BorderBody>
@@ -89,7 +98,9 @@ function NHS2() {
           </ul>
         </div>
 
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/blurred image.png" alt="" />
+        </div>
       </BorderBody>
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
@@ -132,15 +143,11 @@ function NHS2() {
                 of the solution we designed
               </p>
             </div>
-            <div className="mt-10 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
-                READ FULL CASE STUDY ON NOTION
-              </p>
-              <HiArrowRight size={16} />
-            </div>
           </div>
         </div>
-        <div className="phone:h-[646px] h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-10"></div>
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+          <img src="/new.png" alt="" />
+        </div>
       </BorderBody>
       <BorderBody>
         <div className="sm:flex justify-between fade_text">
@@ -169,12 +176,6 @@ function NHS2() {
                 visually prominent to support users’ tendency to rely on it as a
                 hub for information.
               </p>
-            </div>
-            <div className="mt-14 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
-                READ FULL CASE STUDY ON NOTION
-              </p>
-              <HiArrowRight size={16} />
             </div>
           </div>
         </div>
