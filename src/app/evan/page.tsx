@@ -2,8 +2,9 @@
 "use client";
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import AnimatedText from "@/component/TextWipe";
 
-const AnimatedText = () => {
+const Anima = () => {
   useEffect(() => {
     gsap.fromTo(
       ".f",
@@ -20,62 +21,9 @@ const AnimatedText = () => {
 
   return (
     <div className="cnt_sc">
-      <h4
-        className="Awrite inview stview okF"
-        data-params="1.6"
-        data-bucle="1"
-        style={{ opacity: 1 }}
-      >
-        <div
-          className="iO iO-std"
-          data-io="2"
-          style={{ visibility: "visible" }}
-        ></div>
-        <div className="word" style={{ display: "inline-block" }}>
-          {[
-            "$",
-            "*",
-            "[",
-            "9",
-            "€",
-            "s",
-            "|",
-            "+",
-            "c",
-            "{",
-            "]",
-            "r",
-            "{",
-            "%",
-            "o",
-            "+",
-            "{",
-            "l",
-            "{",
-            "+",
-            "l",
-          ].map((char, index) => (
-            <div
-              key={index}
-              className="char"
-              style={{ display: "inline-block", opacity: 1 }}
-            >
-              <span
-                className="f"
-                aria-hidden="true"
-                style={{ display: "block" }}
-              >
-                {char}
-              </span>
-              <span className="n" style={{ opacity: 1 }}>
-                {char}
-              </span>
-            </div>
-          ))}
-        </div>
-      </h4>
+      <AnimatedText text={"jjjjjj"} />
     </div>
   );
 };
 
-export default AnimatedText;
+export default Anima;

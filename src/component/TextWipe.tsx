@@ -1,8 +1,7 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
-
-// gsap.registerPlugin(SplitText);
 
 interface TextAnimationProps {
   text: string;
@@ -41,7 +40,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
           before,
           {
             width: "100%",
-            duration: 0.05,
+            duration: 0.1,
             ease: "power2.inOut",
             delay: delay * index,
             onStart: () => {
@@ -78,8 +77,10 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
   return (
     <div
       style={{
+        fontSize: "3em",
+        fontWeight: "bold",
         position: "relative",
-        // overflow: "hidden",
+        overflow: "hidden",
         whiteSpace: "nowrap",
       }}
     >

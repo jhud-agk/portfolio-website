@@ -208,17 +208,17 @@ function Squad2() {
             alt=""
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
           <Lottie
             animationData={squad2}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <img src="/First-step.png" alt="" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <Lottie
             animationData={squad2w}
             loop={true}
