@@ -48,7 +48,7 @@ function Home() {
   return (
     <main className="font-roboto-mono">
       {/* <Loader /> */}
-      <BorderBody className="h-[400px]">
+      <BorderBody className="h-[300px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -67,7 +67,7 @@ function Home() {
               user-centred approach.
             </p>
           </div>
-          <div className="block smm:hidden black_text font-medium mt-8">
+          <div className="block smm:hidden black_text font-medium phone:mt-8 mt-10">
             <p>
               User Experience Designer and Researcher based in London, focused
               on user-centred design and storytelling. In my journey as a

@@ -10,7 +10,7 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 function NHS2() {
   return (
     <main>
-      <BorderBody className="h-[400px]">
+      <BorderBody className="h-[300px]">
         <Header />
       </BorderBody>
       <BorderBody className="">

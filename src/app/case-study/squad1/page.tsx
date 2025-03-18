@@ -18,7 +18,7 @@ import gif from "../../../../public/Squad-gif.gif";
 function Squad1() {
   return (
     <main className="">
-      <BorderBody className="h-[400px]">
+      <BorderBody className="h-[300px]">
         <Header />
       </BorderBody>
 

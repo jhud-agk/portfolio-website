@@ -8,7 +8,7 @@ function Header() {
   const [time] = useState(new Date());
 
   return (
-    <header className=" flex justify-between px-4">
+    <header className=" flex justify-between">
       <Link href={"/"} className="fade_text" id="">
         {/* <TextAnimation text={"JUDEEJIKE_LDN 01.03 PM"} /> */}
         JUDEEJIKE_LDN {date.format(time, "hh.mm A")}

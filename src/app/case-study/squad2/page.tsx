@@ -17,7 +17,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 function Squad2() {
   return (
     <main>
-      <BorderBody className="h-[400px]">
+      <BorderBody className="h-[300px]">
         <Header />
       </BorderBody>
       <BorderBody className="">

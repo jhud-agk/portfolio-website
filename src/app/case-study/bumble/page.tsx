@@ -16,7 +16,7 @@ import bumble2 from "@/lottie-files/Bumble-2.json";
 function Bumble() {
   return (
     <main>
-      <BorderBody className="h-[400px]">
+      <BorderBody className="h-[300px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
