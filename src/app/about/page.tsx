@@ -2,13 +2,14 @@
 
 import BorderBody from "@/component/BorderBody";
 import Header from "@/component/Header";
+import Link from "next/link";
 import React from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function About() {
   return (
     <div>
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[267px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -48,23 +49,47 @@ function About() {
               </p>
             </div>
 
-            <div className="mt-8">
-              <p className="flex items-center gap-3 text-[#8A8A8A]">
+            <div className="mt-14 font-roboto-mono text-xs">
+              <Link
+                href={
+                  "https://jhud.notion.site/Hey-there-I-m-Jude-198af8134be280fcaa02e3c23cacea48?pvs=4"
+                }
+                target="_blank"
+                className="flex items-center gap-2 text-[#8A8A8A]"
+              >
                 READ.CV <HiMiniArrowUpRight color="#18181B" size={16} />
-              </p>
-              <p className="flex items-center gap-3 text-[#8A8A8A] mt-2">
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/in/jude-ejike/"}
+                target="_blank"
+                className="flex items-center gap-2 text-[#8A8A8A] mt-2"
+              >
                 LINKEDIN <HiMiniArrowUpRight color="#18181B" size={16} />
-              </p>
-              <p className="flex items-center gap-3 text-[#8A8A8A] mt-2">
+              </Link>
+              <Link
+                href={"https://www.are.na/jude-ejike/channels"}
+                target="_blank"
+                className="flex items-center gap-2 text-[#8A8A8A] mt-2"
+              >
                 ARE.NA <HiMiniArrowUpRight color="#18181B" size={16} />
-              </p>
-              <p className="flex items-center gap-3 text-[#8A8A8A] mt-2">
+              </Link>
+              <Link
+                href={"https://www.instagram.com/jhud_agk/"}
+                target="_blank"
+                className="flex items-center gap-2 text-[#8A8A8A] mt-2"
+              >
                 INSTAGRAM <HiMiniArrowUpRight color="#18181B" size={16} />
-              </p>
-              <p className="flex items-center gap-3 text-[#8A8A8A] mt-2">
+              </Link>
+              <Link
+                href={
+                  "https://jhud.notion.site/User-Research-Repository-8cc925204f314fc38381189dc38587b6?pvs=4"
+                }
+                target="_blank"
+                className="flex items-center gap-2 text-[#8A8A8A] mt-2"
+              >
                 JUDEEJIKEUX@GMAIL.COM{" "}
                 <HiMiniArrowUpRight color="#18181B" size={16} />
-              </p>
+              </Link>
             </div>
           </div>
         </div>

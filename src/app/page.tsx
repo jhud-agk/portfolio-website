@@ -48,7 +48,7 @@ function Home() {
   return (
     <main className="font-roboto-mono">
       {/* <Loader /> */}
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[417px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -76,9 +76,9 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex lg:gap-[90px] gap-4 sm:mt-[200px] mt-16">
+        <section className="sm:flex lg:gap-[90px] gap-4 sm:mt-[244px] mt-16">
           <ShortInfo
-            brand="Bumble"
+            brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             info=" Recommending a friend is a free feature that lets bumble users safely
             and easily share a Bumble profile with someone they know, encouraging
             participation."
@@ -90,47 +90,43 @@ function Home() {
             url="/bumble"
           />
           <ShortInfo
-            brand="Squad"
+            brand="[2] Squad: Empowering African Businesses through Digital Payments"
             info="Squad is an online platform that helps business owners create and manage their own online stores."
             role="User Research, Product Design."
             period="Q3 2022 - Q1 2023"
             className="lg:grow sm:w-1/2 w-full sm:mt-0 mt-16"
             imgClass="w-full"
-            textClass="lg:w-[47%]"
             animation={squad}
             url="/squad1"
           />
         </section>
-        <section className="sm:flex sm:mt-[150px] justify-between">
+        <section className="sm:flex sm:mt-[250px] justify-between">
           <ShortInfo
-            brand="Squad 2.0"
+            brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
             info="We launched our payment platform with big goals but didn’t meet them. This case study looks at why, listens to user feedback, and finds ways to fix the issues."
             role="User Research, Product Design."
             period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            textClass="lg:w-[80%]"
             animation={squad2}
             url="/squad2"
           />
           <ShortInfo
-            brand="NHS Digital"
+            brand="[4] UX Research Case Study on the NHS App"
             info="The NHS app is a healthcare app that provide patients with information about their health and treatment options."
             period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            textClass="lg:w-[80%]"
             role="User Research, User Experience Design."
             animation={nhsLanding}
             url="/nhs"
           />
           <ShortInfo
-            brand="Our Dorset Digital"
+            brand="[5] Usability Evaluation of Our Dorset Digital"
             info="Our Dorset Digital is a program focused on creating and using digital tools to improve healthcare for Dorset residents, NHS staff, and frontline teams."
             period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            textClass="lg:w-[80%]"
             role="User Research, User Experience Design."
             url="/nhs2"
             image={"/Component 1.png"}

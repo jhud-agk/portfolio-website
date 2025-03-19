@@ -9,12 +9,12 @@ function Header() {
 
   return (
     <header className=" flex justify-between">
-      <Link href={"/"} className="fade_text" id="">
+      <Link href={"/"} className="fade_text phone:flex phone:gap-2">
         {/* <TextAnimation text={"JUDEEJIKE_LDN 01.03 PM"} /> */}
-        JUDEEJIKE_LDN {date.format(time, "hh.mm A")}
+        JUDEEJIKE_LDN <p>{date.format(time, "hh.mm A")}</p>
       </Link>
-      <div className="flex phone:gap-10 items-center gap-3 fade_text">
-        <div className="flex smm:flex-row flex-col smm:gap-10 fade_text">
+      <div className="flex phone:gap-10 phone:items-center items-start gap-3 fade_text">
+        <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
           <Link href={""}>SHOWCASE</Link>
           <Link href={"/about"}>ABOUT</Link>
           <Link href={""}>UX RESOURCE</Link>

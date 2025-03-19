@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <BorderBody className="">
+    <BorderBody className="mt-5">
       <div className="sm:flex justify-between fade_text pb-20">
         <p>SELECT NEXT PROJECT</p>
         <div className="sm:w-[510px] black_text exper">

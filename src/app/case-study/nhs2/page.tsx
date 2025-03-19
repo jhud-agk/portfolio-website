@@ -4,18 +4,21 @@
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
+import Link from "next/link";
 import React from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function NHS2() {
   return (
     <main>
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[337px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
         <div className="flex justify-between fade_text">
-          <p>Usability Evaluation of Our Dorset Digital</p>
+          <p className="uppercase">
+            Usability Evaluation of Our Dorset Digital
+          </p>
           <div className="sm:w-[450px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               Our Dorset Digital is a program focused on creating and using
@@ -37,7 +40,7 @@ function NHS2() {
         <div className="w-full mt-24">
           <img src="/mock-2.png" alt="" />
         </div>
-        <div className="sm:flex justify-between fade_text mt-16">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -66,15 +69,23 @@ function NHS2() {
               <p>Q4 2022 - Q1 2023</p>
             </div>
             <div className="mt-10 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
-                READ FULL CASE STUDY ON NOTION
-              </p>
-              <HiMiniArrowUpRight size={16} />
+              <Link
+                href={
+                  "https://jhud.notion.site/Usability-Evaluation-of-Our-Dorset-Digital-17eaf8134be2807ca650ec64a46671e4?pvs=4"
+                }
+                target="_blank"
+                className="flex items-center gap-2 "
+              >
+                <p className="text-[#8A8A8A] text-xs">
+                  READ FULL CASE STUDY ON NOTION
+                </p>
+                <HiMiniArrowUpRight size={16} />
+              </Link>
             </div>
           </div>
         </div>
       </BorderBody>
-      <BorderBody className="">
+      <BorderBody className="mt-8">
         <div className="sm:w-[481px] m-auto">
           <p className="text-[#8A8A8A] uppercase">
             what where our research goals
@@ -98,7 +109,7 @@ function NHS2() {
           </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <img src="/blurred image.png" alt="" />
         </div>
       </BorderBody>
@@ -145,12 +156,12 @@ function NHS2() {
             </div>
           </div>
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <img src="/new.png" alt="" />
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text sm:mt-8">
           <p className="uppercase">Recommendations based on Insights</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -181,7 +192,7 @@ function NHS2() {
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text sm:mt-8">
           <p className="uppercase">Potential Impact From Findings</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">

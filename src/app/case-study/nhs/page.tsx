@@ -6,16 +6,17 @@ import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import React from "react";
-import { HiArrowRight } from "react-icons/hi2";
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import nhs from "@/lottie-files/NHS Showreel.json";
 import newNhs from "@/lottie-files/New nhs.json";
 import nhs2 from "@/lottie-files/NHS - 2.json";
+import GoTo from "@/component/GoTo";
 
 function NHS1() {
   return (
     <main>
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[337px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -36,10 +37,10 @@ function NHS1() {
             encouraging participation.
           </p>
         </div>
-        <div className="w-full mt-24">
+        <div className="w-full sm:mt-24 mt-14">
           <img src="/mock 1.png" alt="" />
         </div>
-        <div className="sm:flex justify-between fade_text mt-24">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -68,11 +69,19 @@ function NHS1() {
               <p>Timeline</p>
               <p>Q1 2023 - Q1 2023</p>
             </div>
+            <GoTo
+              website={
+                "https://digital.nhs.uk/blog/design-matters/2024/behind-the-scenes-publishing-the-new-nhs-website-homepage"
+              }
+              notion={
+                "https://jhud.notion.site/A-UX-Research-Case-Study-on-the-NHS-App-94b640a96be94ccb90939544c103b90b?pvs=4"
+              }
+            />
           </div>
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:w-[481px] m-auto mt-10">
+        <div className="sm:w-[481px] m-auto mt-8">
           <p className="text-[#8A8A8A] uppercase">
             what where our research goals
           </p>
@@ -91,7 +100,7 @@ function NHS1() {
             create solutions, test them, and make recommendations on how to
             enhance its adoption based on our findings
           </p>
-          <div className="h-[541px] m-auto sm:w-[324px] mt-24">
+          <div className="h-[541px] m-auto sm:w-[324px] sm:mt-24 mt-14">
             <img
               src="/NHS-App-COVID-pass 1.png"
               className="h-full w-full object-cover"
@@ -101,13 +110,13 @@ function NHS1() {
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="phone:h-[646px] h-[400px] m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-20 mt-10">
           <img src="/SOL_3 1.PNG" alt="" />
         </div>
-        <div className="phone:h-[646px] h-[400px] m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-14 mt-6">
           <img src="/SOL_1 1.PNG" alt="" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-16">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-[70px] mt-7">
           <Lottie animationData={nhs} loop={true} className="w-full h-full" />
         </div>
       </BorderBody>
@@ -153,26 +162,26 @@ function NHS1() {
               </p>
             </div>
 
-            <div className="mt-14 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
+            <div className="sm:mt-14 mt-8 flex items-center gap-2 ">
+              <p className="text-[#8A8A8A] text-xs font-roboto-mono">
                 READ FULL CASE STUDY ON NOTION
               </p>
-              <HiArrowRight size={16} />
+              <HiMiniArrowUpRight color="#18181B" size={16} />
             </div>
           </div>
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <Lottie
             animationData={newNhs}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-7">
           <Lottie animationData={nhs2} loop={true} className="w-full h-full" />
         </div>
       </BorderBody>
-      <BorderBody>
+      <BorderBody className="mt-8">
         <div className="sm:flex justify-between fade_text">
           <p className="uppercase">Recommendations for the NHS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
@@ -211,7 +220,7 @@ function NHS1() {
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text mt-6">
+        <div className="sm:flex justify-between fade_text mt-8">
           <p className="uppercase">
             Recommendations & Potential Impact From Findings
           </p>
@@ -251,11 +260,11 @@ function NHS1() {
               </p>
             </div>
 
-            <div className="mt-14 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
+            <div className="sm:mt-14 mt-8 flex items-center gap-3 ">
+              <p className="text-[#8A8A8A] text-xs font-roboto-mono">
                 READ FULL CASE STUDY ON NOTION
               </p>
-              <HiArrowRight size={16} />
+              <HiMiniArrowUpRight color="#18181B" size={16} />
             </div>
           </div>
         </div>

@@ -12,17 +12,20 @@ import wire2 from "@/lottie-files/wireframe-2 (transaction).json";
 import squad2 from "@/lottie-files/Squad 2.0 -1.json";
 import squad2w from "@/lottie-files/Squad 2.0 - wiraframe reels.json";
 import dynamic from "next/dynamic";
+import GoTo from "@/component/GoTo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 function Squad2() {
   return (
     <main>
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[337px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text">
-          <p>Squad 2.0: Navigating Challenges, Elevating User Experiences.</p>
+        <div className="flex justify-between fade_text ">
+          <p className="uppercase">
+            Squad 2.0: Navigating Challenges, Elevating User Experiences.
+          </p>
           <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               Squad is an online platform that helps business owners create and
@@ -36,14 +39,14 @@ function Squad2() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full mt-16">
+        <div className="w-full sm:mt-24 mt-14">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
             alt=""
           />
         </div>
-        <div className="sm:flex justify-between fade_text mt-24">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -73,6 +76,12 @@ function Squad2() {
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
+            <GoTo
+              website={"https://squadco.com/"}
+              notion={
+                "https://jhud.notion.site/Squad-2-0-Navigating-Challenges-Elevating-User-Experiences-d8bcd6ffdfe445128b5c31246da9eb80?pvs=4"
+              }
+            />
           </div>
         </div>
       </BorderBody>
@@ -105,7 +114,7 @@ function Squad2() {
         </div>
       </BorderBody>
 
-      <BorderBody className="">
+      <BorderBody className="mt-9">
         <div className="sm:w-[481px] m-auto">
           <p className="text-[#8A8A8A] uppercase">Usability Testing</p>
           <p className="black_text mt-3">
@@ -115,35 +124,40 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="sm:w-[481px] m-auto mt-7">
-          <p className="text-[#8A8A8A] uppercase">Usability Testing</p>
-          <p className="black_text mt-3">
-            Onboarding was overwhelming - Users were frustrated with lengthy KYC
-            processes.
+        <div className="sm:w-[481px] m-auto mt-14">
+          <p className="text-[#8A8A8A] uppercase">
+            KEY INSIGHTS FROM USABILITY TESTING
           </p>
-          <p className="black_text mt-3">
-            Checkout Dissatisfaction - Navigation was unclear, and payment
-            methods lacked flexibility.
-          </p>
-          <p className="black_text mt-3">
-            Complex Navigation - Users couldn’t easily locate key features.
-          </p>
-          <p className="black_text mt-3">
-            Poor Usability Scores - an SUS score of 44.4 highlighted the need
-            for redesign.
-          </p>
+
+          <ul className="list-decimal ml-4">
+            <li className="black_text mt-3">
+              Onboarding was overwhelming - Users were frustrated with lengthy
+              KYC processes.
+            </li>
+            <li className="black_text mt-3">
+              Checkout Dissatisfaction - Navigation was unclear, and payment
+              methods lacked flexibility.
+            </li>
+            <li className="black_text mt-3">
+              Complex Navigation - Users couldn’t easily locate key features.
+            </li>
+            <li className="black_text mt-3">
+              Poor Usability Scores - an SUS score of 44.4 highlighted the need
+              for redesign.
+            </li>
+          </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <img src="/Checkout.png" alt="" className="object-cover" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <img src="/Onboard.png" className="object-cover" alt="" />
         </div>
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] m-auto mt-7">
+        <div className="sm:w-[481px] m-auto mt-8">
           <p className="text-[#8A8A8A] uppercase">
             Collaborative Solution Design
           </p>
@@ -178,16 +192,16 @@ function Squad2() {
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
           <Lottie animationData={wire} loop={true} className="w-full h-full" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <Lottie animationData={wire2} loop={true} className="w-full h-full" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <img src="/First step1.png" alt="" />
         </div>
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] m-auto mt-7">
+        <div className="sm:w-[481px] m-auto mt-9">
           <p className="text-[#8A8A8A] uppercase">Testing Solutions</p>
           <p className="black_text mt-3">
             A/B testing and usability testing confirmed improvements.
@@ -208,7 +222,9 @@ function Squad2() {
             alt=""
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+      </BorderBody>
+      <BorderBody className="">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-20">
           <Lottie
             animationData={squad2}
             loop={true}
@@ -227,10 +243,10 @@ function Squad2() {
         </div>
       </BorderBody>
 
-      <BorderBody className="">
+      <BorderBody className="mt-8">
         <div className="sm:flex justify-between fade_text">
           <p>RESULTS AND IMPACT</p>
-          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper ">
             <div className="">
               <p className="font-roboto-mono text-lg">30,000+</p>
               <p className="mt-3">
@@ -248,7 +264,7 @@ function Squad2() {
               </p>
             </div>
 
-            <div className="mt-10 flex items-center gap-3 ">
+            <div className="mt-14 flex items-center gap-3 font-roboto-mono">
               <p className="text-[#8A8A8A] text-xs">
                 READ FULL CASE STUDY ON NOTION
               </p>

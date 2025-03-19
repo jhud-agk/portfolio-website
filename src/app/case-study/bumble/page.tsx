@@ -4,24 +4,25 @@
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
-import Image from "next/image";
 import React from "react";
 import { HiArrowRight } from "react-icons/hi2";
-import gif from "../../../../public/Bumble-gif.gif";
 import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import bumble1 from "@/lottie-files/Bumble-1.json";
 import bumble2 from "@/lottie-files/Bumble-2.json";
+import GoTo from "@/component/GoTo";
 
 function Bumble() {
   return (
     <main>
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[337px]">
         <Header />
       </BorderBody>
       <BorderBody className="">
         <div className="flex justify-between fade_text">
-          <p>Reimagining Bumble’s Profile Sharing Experience</p>
+          <p className="uppercase">
+            Reimagining Bumble’s Profile Sharing Experience
+          </p>
           <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               Recommending a friend is a free feature that lets bumble users
@@ -33,23 +34,23 @@ function Bumble() {
             </p>
           </div>
         </div>
-        <div className="block sm:hidden black_text font-medium mt-5">
+        <div className="block sm:hidden black_text font-medium mt-8">
           <p>
             Recommending a friend is a free feature that lets bumble users
             safely and easily share a Bumble profile with someone they know,
             encouraging participation.
           </p>
         </div>
-        <div className="w-full mt-16">
+        <div className="w-full sm:mt-24 mt-14">
           <img
             src="/bumble 1.png"
             className="object-cover h-full w-full"
             alt=""
           />
         </div>
-        <div className="sm:flex justify-between fade_text mt-24 mb-16">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
           <p>INTRODUCTION AND DETAILS</p>
-          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-8">
             <p className="">
               From the data analysed, users of Bumble frequently resort to
               manually taking screenshots and sending them to their friends to
@@ -76,12 +77,20 @@ function Bumble() {
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
+            <GoTo
+              website={
+                "https://bumble.com/en/the-buzz/bumble-recommend-to-a-friend"
+              }
+              notion={
+                "https://jhud.notion.site/Reimagining-Bumbles-Profile-Sharing-Experience-e42ba09c4dc346989839363557828a03?pvs=4"
+              }
+            />
           </div>
         </div>
       </BorderBody>
 
       <BorderBody>
-        <div className="sm:w-[481px] m-auto mt-24">
+        <div className="sm:w-[481px] m-auto mt-9">
           <p className="text-[#8A8A8A]">BUSINESS GOALS & OBJECTIVES</p>
           <p className="black_text mt-3">
             Introduce a feature that enables in-app profile sharing via
@@ -103,18 +112,17 @@ function Bumble() {
             platforms.
           </p>
 
-          <div className="h-[500px] relative m-auto sm:w-[481px] mt-14">
-            <Image
-              src={gif}
-              alt={"ff"}
-              fill
-              quality={10}
-              className="object-cover"
+          <div className="sm:h-[500px] h-[300px] relative m-auto sm:w-[481px] mt-14">
+            <video
+              src="/Bumble-video.mp4"
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
             />
           </div>
         </div>
       </BorderBody>
-      <BorderBody>
+      <BorderBody className="sm:mt-20 mt-10">
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full">
           <img
             src="/RecommendToAFriend_Final 1.png"
@@ -122,7 +130,7 @@ function Bumble() {
             alt=""
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-[70px]">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <Lottie
             animationData={bumble1}
             loop={true}
@@ -130,7 +138,7 @@ function Bumble() {
           />
         </div>
       </BorderBody>
-      <BorderBody>
+      <BorderBody className="mt-8">
         <div className="sm:flex justify-between fade_text">
           <p>DESIGN METHODOLOGY & PROCESS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
@@ -191,19 +199,19 @@ function Bumble() {
             </div>
           </div>
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <Lottie
             animationData={bumble2}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-10">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
           <img src="/image 1.png" alt="" />
         </div>
       </BorderBody>
 
-      <BorderBody className="">
+      <BorderBody className="mt-8">
         <div className="sm:flex justify-between fade_text">
           <p>RESULTS AND IMPACT</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
@@ -232,7 +240,7 @@ function Bumble() {
               </p>
             </div>
 
-            <div className="mt-10 flex items-center gap-3 ">
+            <div className="mt-14 flex items-center gap-3 ">
               <p className="text-[#8A8A8A] text-xs">
                 READ FULL CASE STUDY ON NOTION
               </p>

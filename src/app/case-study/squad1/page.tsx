@@ -12,13 +12,12 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import squad from "@/lottie-files/Squad-1.json";
 import squad2 from "@/lottie-files/Squad-2.json";
 import squad3 from "@/lottie-files/Squad-3.json";
-import Image from "next/image";
-import gif from "../../../../public/Squad-gif.gif";
+import GoTo from "@/component/GoTo";
 
 function Squad1() {
   return (
     <main className="">
-      <BorderBody className="h-[300px]">
+      <BorderBody className="h-[337px]">
         <Header />
       </BorderBody>
 
@@ -38,7 +37,7 @@ function Squad1() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full mt-16">
+        <div className="w-full sm:mt-24 mt-14">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
@@ -46,7 +45,7 @@ function Squad1() {
           />
         </div>
 
-        <div className="sm:flex justify-between fade_text mt-24">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -76,19 +75,25 @@ function Squad1() {
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
+            <GoTo
+              website={"https://squadco.com/"}
+              notion={
+                "https://jhud.notion.site/Empowering-African-Businesses-through-Digital-Payments-656b43cfa3ea452c897ed3874ed3d234?pvs=4"
+              }
+            />
           </div>
         </div>
       </BorderBody>
 
       <BorderBody>
-        <div className="sm:w-[481px] m-auto mt-10">
+        <div className="sm:w-[481px] m-auto sm:mt-9 mt-6">
           <p className="text-[#8A8A8A]">BUSINESS GOALS & OBJECTIVES</p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-5">
             Merchants needed a simpler, faster, and more reliable way to get
             paid so they could focus on running their businesses without the
             stress of complicated payment systems.{" "}
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-4">
             The goal of the product was to create a seamless, affordable, and
             reliable payment solution tailored to the needs of Nigerian
             merchants transitioning to online business. By offering a fast,
@@ -96,13 +101,13 @@ function Squad1() {
             simplify the payment process, reduce operational stress, and empower
             businesses to scale their operations effectively.
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-4">
             Merchants needed a simpler, faster, and more reliable way to get
             paid so they could focus on running their businesses without the
             stress of complicated payment systems.
           </p>
 
-          <div className="h-[500px] m-auto sm:w-[481px] mt-10">
+          <div className="h-[500px] m-auto sm:w-[481px] mt-14">
             <Lottie
               animationData={whatsapp}
               loop={true}
@@ -113,7 +118,7 @@ function Squad1() {
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] mt-[100px] m-auto">
+        <div className="sm:w-[481px] sm:mt-20 mt-8 m-auto">
           <p className="text-[#8A8A8A] uppercase">
             Our 6-12 Month Success Metrics
           </p>
@@ -140,16 +145,15 @@ function Squad1() {
           </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <Lottie animationData={squad} loop={true} className="w-full h-full" />
         </div>
-        <div className="phone:h-[646px] relative h-[400px] bg-amber-300 m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
-          <Image
-            src={gif}
-            alt={""}
-            fill
+        <div className="m-auto lg:w-[77%] sm:w-[80%] w-full mt-6">
+          <video
+            src="/Squad-%20video.mp4"
+            autoPlay
+            loop
             className="object-cover"
-            quality={10}
           />
         </div>
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
@@ -218,7 +222,7 @@ function Squad1() {
           </div>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
           <Lottie
             animationData={squad3}
             loop={true}
@@ -233,7 +237,7 @@ function Squad1() {
           />
         </div>
 
-        <section className=" mt-[100px]">
+        <section className=" sm:mt-[100px] mt-[55px]">
           <div className="sm:w-[481px] m-auto">
             <p className="text-[#8A8A8A] uppercase">Outlining our next steps</p>
             <div className="black_text">
