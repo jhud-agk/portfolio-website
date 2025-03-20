@@ -23,7 +23,7 @@ function ShortInfo(props: ShortType) {
   return (
     <div className={`${props.className} phone:mt-0 mt-8`}>
       <Link href={`/case-study${props.url}`} className={` black_text`}>
-        <div className={`${props.imgClass}  bg-amber-400`}>
+        <div className={`${props.imgClass}`}>
           {props.animation ? (
             <Lottie
               animationData={props.animation}

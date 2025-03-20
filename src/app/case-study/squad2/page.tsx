@@ -175,7 +175,7 @@ function Squad2() {
           <div className="black_text mt-3">
             <p>For checkout</p>
             <p>
-              a/b Tested horizontal tabs and accordion layouts for payment
+              A/B Tested horizontal tabs and accordion layouts for payment
               options. The accordion design was preferred.
             </p>
           </div>
@@ -215,7 +215,7 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="m-auto h-[280px] lg:w-[480px] sm:w-[85%] w-full mt-24">
+        <div className="m-auto sm:h-[280px] lg:w-[480px] sm:w-[85%] w-full mt-24">
           <img
             src="/Frame 8 1.png"
             className="object-cover w-full h-full"

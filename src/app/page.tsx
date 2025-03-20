@@ -10,12 +10,10 @@ import ShortInfo from "@/component/ShortInfo";
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
-import bumble3 from "@/lottie-files/Bumble-2.json";
 import squad from "@/lottie-files/Squad-1.json";
-import squad2 from "@/lottie-files/Squad 2.0 -1.json";
-
-import nhsLanding from "@/lottie-files/NHS landing page.json";
-// import Footer from "@/component/Footer";
+import squad2New from "@/lottie-files/Landing/Squad 2.json";
+import nhsNew from "@/lottie-files/Landing/NHS.json";
+import bumbleNew from "@/lottie-files/Landing/Bumble.json";
 
 // gsap.registerPlugin(ScrollTrigger);
 function Home() {
@@ -86,7 +84,7 @@ function Home() {
             period="Q3 2022 - Q1 2023"
             className="lg:w-[445px] sm:w-1/2 w-full"
             imgClass="h-[386px] lg:w-[515px] w-full"
-            animation={bumble3}
+            animation={bumbleNew}
             url="/bumble"
           />
           <ShortInfo
@@ -108,7 +106,7 @@ function Home() {
             period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            animation={squad2}
+            animation={squad2New}
             url="/squad2"
           />
           <ShortInfo
@@ -118,7 +116,7 @@ function Home() {
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
             role="User Research, User Experience Design."
-            animation={nhsLanding}
+            animation={nhsNew}
             url="/nhs"
           />
           <ShortInfo

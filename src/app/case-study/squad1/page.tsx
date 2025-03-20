@@ -124,13 +124,13 @@ function Squad1() {
           <p className="text-[#8A8A8A] uppercase">
             Our 6-12 Month Success Metrics
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-3 text-[13px]">
             To ensure the product’s impact and growth, we set clear, measurable
             goals for the first 6-12 months post-launch. Our focus was on two
             key objectives:
           </p>
 
-          <ul className="list-decimal ml-5 font-inter">
+          <ul className="list-decimal ml-5 font-inter text-[13px]">
             <li className="mt-3">
               Onboard 5,000 business owners within the first 6 months – We aimed
               to empower a significant number of businesses by providing them

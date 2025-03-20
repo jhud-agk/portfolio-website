@@ -15,9 +15,9 @@ function Header() {
       </Link>
       <div className="flex phone:gap-10 phone:items-center items-start gap-3 fade_text">
         <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
-          <Link href={""}>SHOWCASE</Link>
+          <Link href={"/showcase"}>SHOWCASE</Link>
           <Link href={"/about"}>ABOUT</Link>
-          <Link href={""}>UX RESOURCE</Link>
+          <Link href={"/case-study/nhs2"}>UX RESOURCE</Link>
         </div>
         <Link href={""} className="bg-[#18181B] text-white px-3 py-[2px]">
           LETS TALK
