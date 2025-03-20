@@ -1,5 +1,5 @@
 //
-
+"use client";
 import React from "react";
 import BorderBody from "./BorderBody";
 import Link from "next/link";

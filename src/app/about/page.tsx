@@ -81,9 +81,7 @@ function About() {
                 INSTAGRAM <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
               <Link
-                href={
-                  "https://jhud.notion.site/User-Research-Repository-8cc925204f314fc38381189dc38587b6?pvs=4"
-                }
+                href={"mailto:JUDEEJIKEUX@GMAIL.COM"}
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A] mt-2"
               >

@@ -16,9 +16,19 @@ function Header() {
         <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
           <Link href={"/showcase"}>SHOWCASE</Link>
           <Link href={"/about"}>ABOUT</Link>
-          <Link href={"/case-study/"}>UX RESOURCE</Link>
+          <Link
+            href={
+              "UX Resource: https://jhud.notion.site/User-Research-Repository-8cc925204f314fc38381189dc38587b6?pvs=4"
+            }
+            target="_blank"
+          >
+            UX RESOURCE
+          </Link>
         </div>
-        <Link href={""} className="bg-[#18181B] text-white px-3 py-[2px]">
+        <Link
+          href={"mailto:JUDEEJIKEUX@GMAIL.COM"}
+          className="bg-[#18181B] text-white px-3 py-[2px]"
+        >
           LETS TALK
         </Link>
       </div>
