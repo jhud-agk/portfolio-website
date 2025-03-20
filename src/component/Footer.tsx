@@ -18,20 +18,24 @@ function Footer() {
             ></Link>
           </div>
           <div className="mt-3">
-            <Link href={""}>
+            <Link href={"/case-study/squad2"}>
               Squad 2.0: Navigating Challenges, Elevating User Experiences.
             </Link>
           </div>
           <div className="mt-3">
-            <Link href={""}>
+            <Link href={"/case-study/bumble"}>
               Reimagining Bumbles Profile Sharing Experience
             </Link>
           </div>
           <div className="mt-3">
-            <Link href={""}>A UX Research Case Study on the NHS App</Link>
+            <Link href={"/case-study/nhs"}>
+              A UX Research Case Study on the NHS App
+            </Link>
           </div>
           <div className="mt-3">
-            <Link href={""}>Usability Evaluation of Our Dorset Digital</Link>
+            <Link href={"/case-study/nhs2"}>
+              Usability Evaluation of Our Dorset Digital
+            </Link>
           </div>
         </div>
       </div>

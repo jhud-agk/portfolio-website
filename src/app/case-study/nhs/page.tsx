@@ -21,7 +21,7 @@ function NHS1() {
       </BorderBody>
       <BorderBody className="">
         <div className="flex justify-between fade_text">
-          <p>UX Research Case Study on the NHS App</p>
+          <p className="uppercase">UX Research Case Study on the NHS App</p>
           <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               The NHS app is a healthcare app that provide patients with

@@ -23,7 +23,9 @@ function Squad1() {
 
       <BorderBody className="">
         <div className="flex justify-between fade_text">
-          <p>SQUAD</p>
+          <p className="uppercase">
+            Squad: Empowering African Businesses through Digital Payments
+          </p>
           <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
               Squad is an online platform that helps business owners create and
@@ -153,7 +155,9 @@ function Squad1() {
             src="/Squad-%20video.mp4"
             autoPlay
             loop
-            className="object-cover"
+            muted
+            playsInline
+            className="object-cover w-full h-full"
           />
         </div>
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">

@@ -115,9 +115,11 @@ function Bumble() {
           <div className="sm:h-[500px] h-[300px] relative m-auto sm:w-[481px] mt-14">
             <video
               src="/Bumble-video.mp4"
-              className="w-full h-full object-cover"
               autoPlay
               loop
+              muted
+              playsInline
+              className="object-cover w-full h-full"
             />
           </div>
         </div>

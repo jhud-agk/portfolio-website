@@ -15,7 +15,7 @@ function About() {
       <BorderBody className="">
         <div className="sm:flex justify-between fade_text">
           <p>ABOUT</p>
-          <div className="sm:w-[510px] black_text font-medium exper sm:mt-0 mt-6">
+          <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="font-semibold">
               User Experience designer based In London where the weather is as
               unpredictable as the user&apos;s behaviour.
