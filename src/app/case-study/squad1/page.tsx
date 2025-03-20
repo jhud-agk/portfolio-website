@@ -13,6 +13,7 @@ import squad from "@/lottie-files/Squad-1.json";
 import squad2 from "@/lottie-files/Squad-2.json";
 import squad3 from "@/lottie-files/Squad-3.json";
 import GoTo from "@/component/GoTo";
+import Link from "next/link";
 
 function Squad1() {
   return (
@@ -269,10 +270,10 @@ function Squad1() {
               </div>
             </div>
 
-            <div className="mt-10 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A]">
+            <div className="mt-10 flex items-center gap-3 font-roboto-mono">
+              <Link href={"/case-study/squad2"} className="text-[#8A8A8A]">
                 READ ABOUT THE CHALLENGES WE FACED ON THE NEXT PAGE
-              </p>
+              </Link>
               <HiArrowRight size={16} />
             </div>
           </div>

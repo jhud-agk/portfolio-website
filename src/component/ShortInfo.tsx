@@ -36,7 +36,7 @@ function ShortInfo(props: ShortType) {
         </div>
 
         <div className={`${props.textClass} text-[11px]`}>
-          <p className="pt-3 uppercase">{props.brand}</p>
+          <p className="pt-3 uppercase font-roboto-mono">{props.brand}</p>
           {/* <p className="mt-1">{props.info}</p>
           <p className="mt-2 text-[#8A8A8A]">{props.role}</p> */}
           {/* <p>{props.period}</p> */}

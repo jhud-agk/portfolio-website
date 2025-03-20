@@ -14,6 +14,7 @@ import squad2w from "@/lottie-files/Squad 2.0 - wiraframe reels.json";
 import dynamic from "next/dynamic";
 import GoTo from "@/component/GoTo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import Link from "next/link";
 
 function Squad2() {
   return (
@@ -104,13 +105,9 @@ function Squad2() {
             solution that helps Nigerian businesses thrive in the digital
             economy and achieve the growth they deserve.
           </p>
-          <div className="m-auto sm:w-[481px] mt-10">
-            <Lottie
-              animationData={trans}
-              loop={true}
-              className="w-full h-full"
-            />
-          </div>
+        </div>
+        <div className="m-auto mt-10">
+          <Lottie animationData={trans} loop={true} className="w-full h-full" />
         </div>
       </BorderBody>
 
@@ -265,9 +262,14 @@ function Squad2() {
             </div>
 
             <div className="mt-14 flex items-center gap-3 font-roboto-mono">
-              <p className="text-[#8A8A8A] text-xs">
+              <Link
+                href={
+                  "https://jhud.notion.site/Squad-2-0-Navigating-Challenges-Elevating-User-Experiences-d8bcd6ffdfe445128b5c31246da9eb80?pvs=4"
+                }
+                className="text-[#8A8A8A] text-xs"
+              >
                 READ FULL CASE STUDY ON NOTION
-              </p>
+              </Link>
               <HiArrowRight size={16} />
             </div>
           </div>

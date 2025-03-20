@@ -63,7 +63,7 @@ function ShowCase() {
             </div>
             <div className="h-[400px] md:h-[660px] mt-4">
               <img
-                src="/showcase/frame 69.png"
+                src="/showcase/Frame 69.png"
                 className="object-cover w-full h-full"
                 alt=""
               />
@@ -140,7 +140,7 @@ function ShowCase() {
           </div>
           <div className="w-full md:w-[647px] h-[400px] md:h-[666px]">
             <img
-              src="/showcase/Frame 74.png"
+              src="/showcase/Frame 77.png"
               className="object-cover h-full w-full"
               alt=""
             />

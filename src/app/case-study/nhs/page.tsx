@@ -12,6 +12,7 @@ import nhs from "@/lottie-files/NHS Showreel.json";
 import newNhs from "@/lottie-files/New nhs.json";
 import nhs2 from "@/lottie-files/NHS - 2.json";
 import GoTo from "@/component/GoTo";
+import Link from "next/link";
 
 function NHS1() {
   return (
@@ -111,10 +112,10 @@ function NHS1() {
       </BorderBody>
       <BorderBody>
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-20 mt-10">
-          <img src="/SOL_3 1.PNG" alt="" />
+          <img src="/SOL_3 1.png" alt="" />
         </div>
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-14 mt-6">
-          <img src="/SOL_1 1.PNG" alt="" />
+          <img src="/SOL_1 1.png" alt="" />
         </div>
         <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-[70px] mt-7">
           <Lottie animationData={nhs} loop={true} className="w-full h-full" />
@@ -163,9 +164,14 @@ function NHS1() {
             </div>
 
             <div className="sm:mt-14 mt-8 flex items-center gap-2 ">
-              <p className="text-[#8A8A8A] text-xs font-roboto-mono">
+              <Link
+                href={
+                  "https://jhud.notion.site/A-UX-Research-Case-Study-on-the-NHS-App-94b640a96be94ccb90939544c103b90b?pvs=4"
+                }
+                className="text-[#8A8A8A] text-xs font-roboto-mono"
+              >
                 READ FULL CASE STUDY ON NOTION
-              </p>
+              </Link>
               <HiMiniArrowUpRight color="#18181B" size={16} />
             </div>
           </div>
@@ -260,10 +266,15 @@ function NHS1() {
               </p>
             </div>
 
-            <div className="sm:mt-14 mt-8 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs font-roboto-mono">
+            <div className="sm:mt-14 mt-8 flex items-center gap-3 font-roboto-mono">
+              <Link
+                href={
+                  "https://jhud.notion.site/A-UX-Research-Case-Study-on-the-NHS-App-94b640a96be94ccb90939544c103b90b?pvs=4"
+                }
+                className="text-[#8A8A8A] text-xs font-roboto-mono"
+              >
                 READ FULL CASE STUDY ON NOTION
-              </p>
+              </Link>
               <HiMiniArrowUpRight color="#18181B" size={16} />
             </div>
           </div>

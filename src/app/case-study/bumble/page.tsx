@@ -11,6 +11,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import bumble1 from "@/lottie-files/Bumble-1.json";
 import bumble2 from "@/lottie-files/Bumble-2.json";
 import GoTo from "@/component/GoTo";
+import Link from "next/link";
 
 function Bumble() {
   return (
@@ -243,9 +244,14 @@ function Bumble() {
             </div>
 
             <div className="mt-14 flex items-center gap-3 ">
-              <p className="text-[#8A8A8A] text-xs">
+              <Link
+                href={
+                  "https://jhud.notion.site/Reimagining-Bumbles-Profile-Sharing-Experience-e42ba09c4dc346989839363557828a03?pvs=4"
+                }
+                className="text-[#8A8A8A] text-xs"
+              >
                 READ FULL CASE STUDY ON NOTION
-              </p>
+              </Link>
               <HiArrowRight size={16} />
             </div>
           </div>

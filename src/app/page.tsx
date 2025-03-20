@@ -126,7 +126,7 @@ function Home() {
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
             role="User Research, User Experience Design."
-            url="/nhs2"
+            url="/doorset-digital"
             image={"/Component 1.png"}
           />
         </section>

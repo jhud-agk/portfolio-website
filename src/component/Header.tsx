@@ -6,7 +6,6 @@ import date from "date-and-time";
 
 function Header() {
   const [time] = useState(new Date());
-
   return (
     <header className=" flex justify-between">
       <Link href={"/"} className="fade_text phone:flex phone:gap-2">
@@ -17,7 +16,7 @@ function Header() {
         <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
           <Link href={"/showcase"}>SHOWCASE</Link>
           <Link href={"/about"}>ABOUT</Link>
-          <Link href={"/case-study/nhs2"}>UX RESOURCE</Link>
+          <Link href={"/case-study/"}>UX RESOURCE</Link>
         </div>
         <Link href={""} className="bg-[#18181B] text-white px-3 py-[2px]">
           LETS TALK

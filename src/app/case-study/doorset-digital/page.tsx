@@ -8,7 +8,7 @@ import Link from "next/link";
 import React from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
 
-function NHS2() {
+function DigitalDoorset() {
   return (
     <main>
       <BorderBody className="h-[337px]">
@@ -227,4 +227,4 @@ function NHS2() {
   );
 }
 
-export default NHS2;
+export default DigitalDoorset;
