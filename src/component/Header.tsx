@@ -18,7 +18,7 @@ function Header() {
           <Link href={"/about"}>ABOUT</Link>
           <Link
             href={
-              "UX Resource: https://jhud.notion.site/User-Research-Repository-8cc925204f314fc38381189dc38587b6?pvs=4"
+              "https://jhud.notion.site/User-Research-Repository-8cc925204f314fc38381189dc38587b6?pvs=4"
             }
             target="_blank"
           >

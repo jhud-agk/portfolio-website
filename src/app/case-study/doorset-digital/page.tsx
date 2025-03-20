@@ -76,7 +76,7 @@ function DigitalDoorset() {
                 target="_blank"
                 className="flex items-center gap-2 "
               >
-                <p className="text-[#8A8A8A] text-xs">
+                <p className="text-[#8A8A8A] text-xs font-roboto-mono">
                   READ FULL CASE STUDY ON NOTION
                 </p>
                 <HiMiniArrowUpRight size={16} />
@@ -94,7 +94,7 @@ function DigitalDoorset() {
             As the Lead UX Researcher, my main objectives were:
           </p>
 
-          <ul className="list-decimal ml-5 font-inter">
+          <ul className="list-decimal black_text ml-5 font-inter">
             <li className="mt-3">
               Uncover usability issues to inform actionable design improvements.
             </li>

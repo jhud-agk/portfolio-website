@@ -248,7 +248,7 @@ function Bumble() {
                 href={
                   "https://jhud.notion.site/Reimagining-Bumbles-Profile-Sharing-Experience-e42ba09c4dc346989839363557828a03?pvs=4"
                 }
-                className="text-[#8A8A8A] text-xs"
+                className="text-[#8A8A8A] text-xs font-roboto-mono"
               >
                 READ FULL CASE STUDY ON NOTION
               </Link>
