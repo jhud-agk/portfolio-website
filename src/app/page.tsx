@@ -46,7 +46,7 @@ function Home() {
   return (
     <main className="font-roboto-mono">
       {/* <Loader /> */}
-      <BorderBody className="h-[417px]">
+      <BorderBody className="h-[417px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -77,11 +77,6 @@ function Home() {
         <section className="sm:flex lg:gap-[90px] gap-4 sm:mt-[244px] mt-16">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
-            info=" Recommending a friend is a free feature that lets bumble users safely
-            and easily share a Bumble profile with someone they know, encouraging
-            participation."
-            role="User Research, Product Design."
-            period="Q3 2022 - Q1 2023"
             className="lg:w-[445px] sm:w-1/2 w-full"
             imgClass="h-[386px] lg:w-[515px] w-full"
             animation={bumbleNew}
@@ -89,9 +84,6 @@ function Home() {
           />
           <ShortInfo
             brand="[2] Squad: Empowering African Businesses through Digital Payments"
-            info="Squad is an online platform that helps business owners create and manage their own online stores."
-            role="User Research, Product Design."
-            period="Q3 2022 - Q1 2023"
             className="lg:grow sm:w-1/2 w-full sm:mt-0 mt-16"
             imgClass="w-full"
             animation={squad}
@@ -101,9 +93,6 @@ function Home() {
         <section className="sm:flex sm:mt-[250px] justify-between">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
-            info="We launched our payment platform with big goals but didn’t meet them. This case study looks at why, listens to user feedback, and finds ways to fix the issues."
-            role="User Research, Product Design."
-            period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
             animation={squad2New}
@@ -111,21 +100,15 @@ function Home() {
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
-            info="The NHS app is a healthcare app that provide patients with information about their health and treatment options."
-            period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            role="User Research, User Experience Design."
             animation={nhsNew}
             url="/nhs"
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
-            info="Our Dorset Digital is a program focused on creating and using digital tools to improve healthcare for Dorset residents, NHS staff, and frontline teams."
-            period="Q3 2022 - Q1 2023"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
             imgClass="lg:h-[500px] h-[400px] w-full box"
-            role="User Research, User Experience Design."
             url="/doorset-digital"
             image={"/Component 1.png"}
           />

@@ -17,7 +17,7 @@ import Link from "next/link";
 function NHS1() {
   return (
     <main>
-      <BorderBody className="h-[337px]">
+      <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">

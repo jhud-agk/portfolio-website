@@ -11,7 +11,7 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 function DigitalDoorset() {
   return (
     <main>
-      <BorderBody className="h-[337px]">
+      <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">

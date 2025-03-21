@@ -8,9 +8,6 @@ import React from "react";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 type ShortType = {
   brand: string;
-  info: string;
-  role: string;
-  period: string;
   className: string;
   imgClass: string;
   textClass?: string;

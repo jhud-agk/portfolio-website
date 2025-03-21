@@ -8,7 +8,7 @@ import React from "react";
 function ShowCase() {
   return (
     <main>
-      <BorderBody className="h-[246px]">
+      <BorderBody className="h-[246px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
@@ -33,7 +33,7 @@ function ShowCase() {
           </p>
         </div>
 
-        <section className="sm:mt-[200px] mt-[100px] flex flex-col md:flex-row justify-between gap-6">
+        <section className="mt-[200px] flex flex-col md:flex-row justify-between gap-6">
           <div className="flex flex-col gap-4 w-full md:w-[764px]">
             <div>
               <img
@@ -59,11 +59,11 @@ function ShowCase() {
                 alt=""
                 className="w-full h-full object-cover"
               />
-              <p className="mt-2">[002]</p>
+              <p className="mt-2">[003]</p>
             </div>
-            <div className="h-[400px] md:h-[660px] mt-4">
+            <div className="h-[400px] md:h-[660px]">
               <img
-                src="/showcase/Frame 69.png"
+                src="/showcase/frame 69.png"
                 className="object-cover w-full h-full"
                 alt=""
               />
@@ -140,7 +140,7 @@ function ShowCase() {
           </div>
           <div className="w-full md:w-[647px] h-[400px] md:h-[666px]">
             <img
-              src="/showcase/Frame 77.png"
+              src="/showcase/Frame 74.png"
               className="object-cover h-full w-full"
               alt=""
             />

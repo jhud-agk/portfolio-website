@@ -19,7 +19,7 @@ import Link from "next/link";
 function Squad2() {
   return (
     <main>
-      <BorderBody className="h-[337px]">
+      <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
