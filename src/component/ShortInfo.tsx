@@ -28,7 +28,11 @@ function ShortInfo(props: ShortType) {
               className="w-full h-full"
             />
           ) : (
-            <img src={props.image} alt="" className="object-cover" />
+            <img
+              src={props.image}
+              alt=""
+              className="object-cover h-full w-full"
+            />
           )}
         </div>
 

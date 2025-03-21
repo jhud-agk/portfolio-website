@@ -74,11 +74,11 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex lg:gap-[90px] gap-4 sm:mt-[244px] mt-16">
+        <section className="sm:flex  2xl:gap-[200px] lg:gap-[90px] gap-4 sm:mt-[244px] mt-16 max-w-screen-2xl mx-auto">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             className="lg:w-[445px] sm:w-1/2 w-full"
-            imgClass="h-[386px] lg:w-[515px] w-full"
+            imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-[600px]"
             animation={bumbleNew}
             url="/bumble"
           />
@@ -90,25 +90,26 @@ function Home() {
             url="/squad1"
           />
         </section>
-        <section className="sm:flex sm:mt-[250px] justify-between">
+
+        <section className="sm:flex sm:mt-[250px] justify-between max-w-screen-2xl mx-auto gap-6">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box"
+            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
             animation={squad2New}
             url="/squad2"
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box"
+            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
             animation={nhsNew}
             url="/nhs"
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
             className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box"
+            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
             url="/doorset-digital"
             image={"/Component 1.png"}
           />
