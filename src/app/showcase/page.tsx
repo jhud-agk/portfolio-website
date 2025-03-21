@@ -33,38 +33,34 @@ function ShowCase() {
           </p>
         </div>
 
-        <section className="mt-[200px] flex flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto">
-          <div className="flex flex-col gap-4 w-full md:w-[764px] 2xl:w-[900px]">
-            <div>
+        <section className="mt-[200px] flex flex-col md:flex-row justify-between gap-6">
+          <div className="md:w-[60%]">
+            <div className="">
               <img
                 src="/showcase/effortless.png"
                 alt=""
-                className="w-full h-auto 2xl:h-[500px]"
+                className="object-cover h-full"
               />
               <p className="mt-2">[001]</p>
             </div>
-            <div>
-              <img
-                src="/showcase/workplace 1.png"
-                className="object-cover w-full h-auto 2xl:h-[500px]"
-                alt=""
-              />
+            <div className="mt-5">
+              <img src="/showcase/workplace 1.png" className="w-auto" alt="" />
               <p className="mt-2">[003]</p>
             </div>
           </div>
-          <div className="flex flex-col gap-6 w-full md:w-[530px] 2xl:w-[650px]">
-            <div className="h-[300px] md:h-[460px] 2xl:h-[550px]">
+          <div className="flex flex-col gap-6 md:w-[40%]">
+            <div className="">
               <img
                 src="/showcase/JNJ 1.png"
                 alt=""
                 className="w-full h-full object-cover"
               />
-              <p className="mt-2">[003]</p>
+              <p className="mt-2">[002]</p>
             </div>
-            <div className="h-[400px] md:h-[660px] 2xl:h-[800px]">
+            <div className="mt-5">
               <img
                 src="/showcase/frame 69.png"
-                className="object-cover w-full h-full"
+                className="object-cover h-full w-full"
                 alt=""
               />
               <p className="mt-2">[004]</p>
@@ -72,8 +68,8 @@ function ShowCase() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between max-w-screen-2xl mx-auto">
-          <div className="w-full md:w-[526px] 2xl:w-[650px] h-[400px] md:h-[666px] 2xl:h-[800px]">
+        <section className="flex flex-col md:flex-row gap-6 mt-5 justify-between">
+          <div className="">
             <img
               src="/showcase/Frame 71.png"
               alt=""
@@ -81,7 +77,7 @@ function ShowCase() {
             />
             <p className="mt-2">[005]</p>
           </div>
-          <div className="w-full md:w-[765px] 2xl:w-[900px] h-[400px] md:h-[666px] 2xl:h-[800px]">
+          <div className="">
             <img
               src="/showcase/Frame 70.png"
               className="object-cover w-full h-full"
@@ -91,8 +87,8 @@ function ShowCase() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between max-w-screen-2xl mx-auto">
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[800px]">
+        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between">
+          <div className="">
             <img
               src="/showcase/Frame 72.png"
               className="object-cover w-full h-full"
@@ -100,7 +96,7 @@ function ShowCase() {
             />
             <p className="mt-2">[007]</p>
           </div>
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[800px]">
+          <div className="">
             <img
               src="/showcase/Frame 73.png"
               className="object-cover w-full h-full"
@@ -110,8 +106,8 @@ function ShowCase() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between max-w-screen-2xl mx-auto">
-          <div className="w-full md:w-[765px] 2xl:w-[900px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between">
+          <div className="">
             <img
               src="/showcase/Frame 75.png"
               className="h-full w-full object-cover"
@@ -119,7 +115,7 @@ function ShowCase() {
             />
             <p className="mt-2">[009]</p>
           </div>
-          <div className="w-full md:w-[529px] 2xl:w-[650px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+          <div className="">
             <img
               src="/showcase/Frame 74.png"
               className="object-cover h-full w-full"
@@ -129,8 +125,8 @@ function ShowCase() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between max-w-screen-2xl mx-auto">
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+        <section className="flex flex-col md:flex-row gap-6 mt-9 justify-between">
+          <div className="md:w-1/2">
             <img
               src="/showcase/Frame 76.png"
               className="h-full w-full object-cover"
@@ -138,9 +134,9 @@ function ShowCase() {
             />
             <p className="mt-2">[011]</p>
           </div>
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+          <div className="md:w-1/2">
             <img
-              src="/showcase/Frame 74.png"
+              src="/showcase/Frame 77.png"
               className="object-cover h-full w-full"
               alt=""
             />
@@ -148,8 +144,8 @@ function ShowCase() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 mt-9 mb-20 justify-between max-w-screen-2xl mx-auto">
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+        <section className="flex flex-col md:flex-row gap-6 mt-9 mb-20 justify-between">
+          <div className="">
             <img
               src="/showcase/Frame 78.png"
               className="h-full w-full object-cover"
@@ -157,7 +153,7 @@ function ShowCase() {
             />
             <p className="mt-2">[013]</p>
           </div>
-          <div className="w-full md:w-[647px] 2xl:w-[800px] h-[400px] md:h-[666px] 2xl:h-[850px]">
+          <div className="">
             <img
               src="/showcase/Frame 79.png"
               className="object-cover h-full w-full"

@@ -8,8 +8,8 @@ import React from "react";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 type ShortType = {
   brand: string;
-  className: string;
-  imgClass: string;
+  className?: string;
+  imgClass?: string;
   textClass?: string;
   animation?: unknown;
   url?: string;
@@ -20,22 +20,19 @@ function ShortInfo(props: ShortType) {
   return (
     <div className={`${props.className} phone:mt-0 mt-8`}>
       <Link href={`/case-study${props.url}`} className={` black_text`}>
-        <div className={`${props.imgClass}`}>
-          {props.animation ? (
-            <Lottie
-              animationData={props.animation}
-              loop={true}
-              className="w-full h-full"
-            />
-          ) : (
-            <img
-              src={props.image}
-              alt=""
-              className="object-cover h-full w-full"
-            />
-          )}
-        </div>
-
+        {props.animation ? (
+          <Lottie
+            animationData={props.animation}
+            loop={true}
+            className={`${props.imgClass!} w-full h-full`}
+          />
+        ) : (
+          <img
+            src={props.image}
+            alt=""
+            className={`object-cover w-full h-full ${props.imgClass}`}
+          />
+        )}
         <div className={`${props.textClass} text-[11px]`}>
           <p className="pt-3 uppercase font-roboto-mono">{props.brand}</p>
           {/* <p className="mt-1">{props.info}</p>

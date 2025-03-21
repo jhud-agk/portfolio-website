@@ -74,44 +74,43 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex  2xl:gap-[200px] lg:gap-[90px] gap-4 sm:mt-[244px] mt-16 max-w-screen-2xl mx-auto">
+        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
-            className="lg:w-[445px] sm:w-1/2 w-full"
-            imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-[600px]"
+            // className="lg:w-[445px] sm:w-1/2 w-full "
+            className="sm:w-1/3"
+            // imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-"
             animation={bumbleNew}
             url="/bumble"
           />
           <ShortInfo
             brand="[2] Squad: Empowering African Businesses through Digital Payments"
-            className="lg:grow sm:w-1/2 w-full sm:mt-0 mt-16"
-            imgClass="w-full"
+            // className="lg:grow sm:w-1/2 w-full sm:mt-0 mt-16"
+            // imgClass="w-full"
+            className="sm:w-2/3"
             animation={squad}
             url="/squad1"
           />
         </section>
 
-        <section className="sm:flex sm:mt-[250px] justify-between max-w-screen-2xl mx-auto gap-6">
+        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
-            className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
+            className="sm:w-1/3"
             animation={squad2New}
             url="/squad2"
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
-            className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
+            className="sm:w-1/3"
             animation={nhsNew}
             url="/nhs"
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
-            className="sm:w-[32.5%] w-full box sm:mt-0 mt-16"
-            imgClass="lg:h-[500px] h-[400px] w-full box 2xl:h-[550px]"
+            className="sm:w-1/3"
             url="/doorset-digital"
-            image={"/Component 1.png"}
+            image={"/Component 1s.png"}
           />
         </section>
       </BorderBody>
