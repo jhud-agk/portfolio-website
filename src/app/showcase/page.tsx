@@ -39,12 +39,16 @@ function ShowCase() {
               <img
                 src="/showcase/effortless.png"
                 alt=""
-                className="object-cover h-full"
+                className="object-cover h-full min-h-[300px]"
               />
               <p className="mt-2">[001]</p>
             </div>
             <div className="mt-5">
-              <img src="/showcase/workplace 1.png" className="w-auto" alt="" />
+              <img
+                src="/showcase/workplace 1.png"
+                className="object-cover h-full min-h-[300px]"
+                alt=""
+              />
               <p className="mt-2">[003]</p>
             </div>
           </div>
@@ -53,14 +57,14 @@ function ShowCase() {
               <img
                 src="/showcase/JNJ 1.png"
                 alt=""
-                className="w-full h-full object-cover"
+                className="object-cover h-full min-h-[300px]"
               />
               <p className="mt-2">[002]</p>
             </div>
             <div className="mt-5">
               <img
-                src="/showcase/frame 69.png"
-                className="object-cover h-full w-full"
+                src="/showcase/Frame 69.png"
+                className="object-cover h-full min-h-[300px]"
                 alt=""
               />
               <p className="mt-2">[004]</p>
@@ -73,14 +77,14 @@ function ShowCase() {
             <img
               src="/showcase/Frame 71.png"
               alt=""
-              className="w-full h-full object-cover"
+              className="object-cover h-full min-h-[300px]"
             />
             <p className="mt-2">[005]</p>
           </div>
           <div className="">
             <img
               src="/showcase/Frame 70.png"
-              className="object-cover w-full h-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[006]</p>
@@ -91,7 +95,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 72.png"
-              className="object-cover w-full h-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[007]</p>
@@ -99,7 +103,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 73.png"
-              className="object-cover w-full h-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[008]</p>
@@ -110,7 +114,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 75.png"
-              className="h-full w-full object-cover"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[009]</p>
@@ -118,7 +122,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 74.png"
-              className="object-cover h-full w-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[010]</p>
@@ -129,7 +133,7 @@ function ShowCase() {
           <div className="md:w-1/2">
             <img
               src="/showcase/Frame 76.png"
-              className="h-full w-full object-cover"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[011]</p>
@@ -137,7 +141,7 @@ function ShowCase() {
           <div className="md:w-1/2">
             <img
               src="/showcase/Frame 77.png"
-              className="object-cover h-full w-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[012]</p>
@@ -148,7 +152,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 78.png"
-              className="h-full w-full object-cover"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[013]</p>
@@ -156,7 +160,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 79.png"
-              className="object-cover h-full w-full"
+              className="object-cover h-full min-h-[300px]"
               alt=""
             />
             <p className="mt-2">[014]</p>

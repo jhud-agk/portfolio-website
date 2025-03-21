@@ -9,7 +9,7 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 function About() {
   return (
     <div>
-      <BorderBody className="h-[267px]">
+      <BorderBody className="h-[267px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">

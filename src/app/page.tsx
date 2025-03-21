@@ -93,7 +93,7 @@ function Home() {
           />
         </section>
 
-        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start">
+        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
             className="sm:w-1/3"
