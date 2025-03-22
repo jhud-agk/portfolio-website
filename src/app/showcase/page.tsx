@@ -95,7 +95,7 @@ function ShowCase() {
           <div className="">
             <img
               src="/showcase/Frame 72.png"
-              className="object-cover h-full min-w-[300px]"
+              className="object-cover h-full w-full min-w-[300px]"
               alt=""
             />
             <p className="mt-2">[007]</p>

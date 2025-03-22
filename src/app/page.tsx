@@ -16,41 +16,30 @@ import nhsNew from "@/lottie-files/Landing/NHS.json";
 import bumbleNew from "@/lottie-files/Landing/Bumble.json";
 
 // gsap.registerPlugin(ScrollTrigger);
-function Home() {
-  // useEffect(() => {
-  //   gsap.from(".box", {
-  //     opacity: 0,
-  //     y: 100,
-  //     duration: 1,
-  //     stagger: 0.3,
-  //     scrollTrigger: {
-  //       trigger: ".box",
-  //       start: "top 80%", // Starts animation when element is 80% visible
-  //       end: "bottom 20%", // Ends when element reaches 20%
-  //       toggleActions: "play none none none", // Controls animation behavior
-  //       markers: false, // For debugging (remove in production)
-  //     },
-  //   });
-  // }, []);
 
-  // useGSAP(() => {
-  //   gsap.from(".exper", {
-  //     x: 400,
-  //     opacity: 0.4,
-  //     duration: 0.5,
-  //     // ease: "bounce.in",
-  //     ease: "power1.in",
-  //   });
-  // }, []);
+// gsap.registerPlugin(ScrollTrigger);
+function Home() {
+  //   useEffect(() => {
+  //     gsap.from(".box", {
+  //       opacity: 0,
+  //       y: 50,
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: ".box",
+  //         start: "top 80%", // When the top of the box reaches 80% of the viewport
+  //         toggleActions: "play none none reverse", // Play animation when scrolling down, reverse when scrolling up
+  //       },
+  //     });
+  //   }, []);
 
   return (
     <main className="font-roboto-mono">
       {/* <Loader /> */}
-      <BorderBody className="h-[417px]" cross={false}>
+      <BorderBody className="h-[417px] box" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <section className="smm:flex justify-between fade_text">
+        <section className="smm:flex justify-between fade_text box">
           <div className="flex smm:w-[45%] justify-between">
             <p>[SELECTED WORK]</p>
             <p>PORTFOLIO_20/25</p>
@@ -74,7 +63,7 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between">
+        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between box">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
@@ -93,7 +82,7 @@ function Home() {
           />
         </section>
 
-        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36">
+        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 box">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
             className="sm:w-1/3"
