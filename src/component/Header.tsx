@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import date from "date-and-time";
+import TypingEffect from "./TypingEffect";
 
 function Header() {
   const [time] = useState(new Date());
@@ -14,7 +15,10 @@ function Header() {
       </Link>
       <div className="flex phone:gap-10 phone:items-center items-start gap-3 fade_text">
         <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
-          <Link href={"/showcase"}>SHOWCASE</Link>
+          <Link href={"/showcase"}>
+            {" "}
+            <TypingEffect word="SHOWCASE" />
+          </Link>
           <Link href={"/about"}>ABOUT</Link>
           <Link
             href={

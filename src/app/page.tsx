@@ -1,9 +1,9 @@
 "use client";
 // import Loader from "@/component/Loader";
 import ShortInfo from "@/component/ShortInfo";
-// import React, { useEffect } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // import TextAnimation from "@/component/TextWipe";
 // import { useGSAP } from "@gsap/react";
@@ -14,27 +14,50 @@ import squad from "@/lottie-files/Squad-1.json";
 import squad2New from "@/lottie-files/Landing/Squad 2.json";
 import nhsNew from "@/lottie-files/Landing/NHS.json";
 import bumbleNew from "@/lottie-files/Landing/Bumble.json";
+import Lenis from "lenis";
+import TypingEffect from "@/component/TypingEffect";
 
 // gsap.registerPlugin(ScrollTrigger);
 
 // gsap.registerPlugin(ScrollTrigger);
 function Home() {
-  //   useEffect(() => {
-  //     gsap.from(".box", {
-  //       opacity: 0,
-  //       y: 50,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: ".box",
-  //         start: "top 80%", // When the top of the box reaches 80% of the viewport
-  //         toggleActions: "play none none reverse", // Play animation when scrolling down, reverse when scrolling up
-  //       },
-  //     });
-  //   }, []);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Initialize Lenis smooth scrolling
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // GSAP ScrollTrigger animation
+    gsap.from(".fade-in", {
+      opacity: 0,
+      y: 50,
+      duration: 1.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".fade-in",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    return () => {
+      lenis.destroy();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   return (
     <main className="font-roboto-mono">
       {/* <Loader /> */}
+      <TypingEffect word="Hello, World!" />
       <BorderBody className="h-[417px] box" cross={false}>
         <Header />
       </BorderBody>
