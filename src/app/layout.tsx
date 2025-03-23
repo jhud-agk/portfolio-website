@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { ReactLenis } from "@/component/lenis";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,9 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_mono.variable} ${inter.variable} antialiased`}>
-        {children}
-      </body>
+      <ReactLenis root>
+        <body
+          className={`${roboto_mono.variable} ${inter.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
