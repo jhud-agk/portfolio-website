@@ -70,27 +70,27 @@ function Home() {
         <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 reveal">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             animation={squad2New}
             url="/squad2"
-            textClass="reveal"
-            imgClass="reveal"
+            textClass=""
+            imgClass=""
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             animation={nhsNew}
             url="/nhs"
-            textClass="reveal"
-            imgClass="reveal"
+            textClass=""
+            imgClass=""
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             url="/doorset-digital"
             image={"/Component 1s.png"}
-            textClass="reveal"
-            imgClass="reveal"
+            textClass=""
+            imgClass=""
           />
         </section>
       </BorderBody>
