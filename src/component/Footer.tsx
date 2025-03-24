@@ -5,11 +5,11 @@ import BorderBody from "./BorderBody";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-function Footer() {
+function Footer({ className }: { className?: string }) {
   const pathname = usePathname();
   return (
     <BorderBody className="mt-5">
-      <div className="sm:flex justify-between fade_text pb-20">
+      <div className={`${className} sm:flex justify-between fade_text pb-20`}>
         <p>SELECT NEXT PROJECT</p>
         <div className="sm:w-[510px] black_text exper">
           {pathname !== "/case-study/squad1" && (

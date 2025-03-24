@@ -14,16 +14,18 @@ import squad2 from "@/lottie-files/Squad-2.json";
 import squad3 from "@/lottie-files/Squad-3.json";
 import GoTo from "@/component/GoTo";
 import Link from "next/link";
+import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function Squad1() {
   return (
-    <main className="">
+    <AnimationCon>
       <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
 
       <BorderBody className="">
-        <div className="flex justify-between fade_text">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Squad: Empowering African Businesses through Digital Payments
           </p>
@@ -34,13 +36,13 @@ function Squad1() {
             <p>manage their own online stores.</p>
           </div>
         </div>
-        <div className="block sm:hidden black_text font-medium mt-5">
+        <div className="block sm:hidden black_text font-medium mt-5 reveal">
           <p>
             Squad is an online platform that helps business owners create and
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
@@ -48,7 +50,7 @@ function Squad1() {
           />
         </div>
 
-        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -58,11 +60,11 @@ function Squad1() {
               expensive, and hard to use, making it tough for businesses to keep
               up with orders and grow.
             </p>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Role</p>
               <p>Product designer, Researcher</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Methodologies</p>
               <p>
                 User Research, Usability Testing, Product Design, Interactive
@@ -70,11 +72,11 @@ function Squad1() {
                 Design Optimization.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Platform</p>
               <p>Web Application</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
@@ -83,20 +85,21 @@ function Squad1() {
               notion={
                 "https://jhud.notion.site/Empowering-African-Businesses-through-Digital-Payments-656b43cfa3ea452c897ed3874ed3d234?pvs=4"
               }
+              className="reveal"
             />
           </div>
         </div>
       </BorderBody>
 
       <BorderBody>
-        <div className="sm:w-[481px] m-auto sm:mt-9 mt-6">
+        <div className="sm:w-[481px] m-auto sm:mt-9 mt-6 reveal">
           <p className="text-[#8A8A8A]">BUSINESS GOALS & OBJECTIVES</p>
           <p className="black_text mt-5">
             Merchants needed a simpler, faster, and more reliable way to get
             paid so they could focus on running their businesses without the
             stress of complicated payment systems.{" "}
           </p>
-          <p className="black_text mt-4">
+          <p className="black_text mt-4 reveal">
             The goal of the product was to create a seamless, affordable, and
             reliable payment solution tailored to the needs of Nigerian
             merchants transitioning to online business. By offering a fast,
@@ -104,13 +107,13 @@ function Squad1() {
             simplify the payment process, reduce operational stress, and empower
             businesses to scale their operations effectively.
           </p>
-          <p className="black_text mt-4">
+          <p className="black_text mt-4 reveal">
             Merchants needed a simpler, faster, and more reliable way to get
             paid so they could focus on running their businesses without the
             stress of complicated payment systems.
           </p>
 
-          <div className="h-[500px] m-auto sm:w-[481px] mt-14">
+          <div className="h-[500px] m-auto sm:w-[481px] mt-14 reveal">
             <Lottie
               animationData={whatsapp}
               loop={true}
@@ -121,7 +124,7 @@ function Squad1() {
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] sm:mt-20 mt-8 m-auto">
+        <div className="sm:w-[481px] sm:mt-20 mt-8 m-auto reveal">
           <p className="text-[#8A8A8A] uppercase">
             Our 6-12 Month Success Metrics
           </p>
@@ -131,7 +134,7 @@ function Squad1() {
             key objectives:
           </p>
 
-          <ul className="list-decimal ml-5 font-inter text-[13px]">
+          <ul className="list-decimal ml-5 font-inter text-[13px] reveal">
             <li className="mt-3">
               Onboard 5,000 business owners within the first 6 months – We aimed
               to empower a significant number of businesses by providing them
@@ -148,10 +151,10 @@ function Squad1() {
           </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <Lottie animationData={squad} loop={true} className="w-full h-full" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[80%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[80%] w-full mt-6 reveal">
           <video
             src="/Squad-%20video.mp4"
             autoPlay
@@ -161,7 +164,7 @@ function Squad1() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <Lottie
             animationData={squad2}
             loop={true}
@@ -171,7 +174,7 @@ function Squad1() {
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text reveal">
           <p>DESIGN METHODOLOGY & PROCESS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -182,35 +185,35 @@ function Squad1() {
                 objectives.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Team Collaboration</p>
               <p>
                 After collecting the recordings from the user interviews, we
                 synthesised the data and grouped the findings into themes.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Decision Making</p>
               <p>
                 Used dot voting to decide which problems to address for the
                 basic version of our product (MVP).
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>How Might We</p>
               <p>
                 To align our understanding of user challenges identified during
                 research with opportunities for innovative problem-solving.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Wireframes</p>
               <p>
                 I created simple wireframes in greyscales to focus on the main
                 functions and how it feels to use.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Design System</p>
               <p>
                 following the Atomic design system principles, we created atoms,
@@ -227,14 +230,14 @@ function Squad1() {
           </div>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <Lottie
             animationData={squad3}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
@@ -242,7 +245,7 @@ function Squad1() {
           />
         </div>
 
-        <section className=" sm:mt-[100px] mt-[55px]">
+        <section className=" sm:mt-[100px] mt-[55px] reveal">
           <div className="sm:w-[481px] m-auto">
             <p className="text-[#8A8A8A] uppercase">Outlining our next steps</p>
             <div className="black_text">
@@ -253,15 +256,15 @@ function Squad1() {
                   towards turning our design concepts into a tangible reality.
                 </p>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 reveal">
                 <p>Iteration and Refinement</p>
                 <p>Iteration is at the core of our design philosophy.</p>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 reveal">
                 <p>Testing Prototypes</p>
                 <p>Rigorous testing of the implemented design is paramount.</p>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 reveal">
                 <p>Observation and User Feedback</p>
                 <p>
                   User observation plays a pivotal role in gauging the
@@ -270,17 +273,17 @@ function Squad1() {
               </div>
             </div>
 
-            <div className="mt-10 flex items-center gap-3 font-roboto-mono">
+            <div className="mt-10 flex items-center gap-3 font-roboto-mono reveal">
               <Link href={"/case-study/squad2"} className="text-[#8A8A8A]">
-                READ ABOUT THE CHALLENGES WE FACED ON THE NEXT PAGE
+                <TypingEffect word=" READ ABOUT THE CHALLENGES WE FACED ON THE NEXT PAGE" />
               </Link>
               <HiArrowRight size={16} />
             </div>
           </div>
         </section>
       </BorderBody>
-      <Footer />
-    </main>
+      <Footer className="reveal" />
+    </AnimationCon>
   );
 }
 

@@ -15,15 +15,17 @@ import dynamic from "next/dynamic";
 import GoTo from "@/component/GoTo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import Link from "next/link";
+import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function Squad2() {
   return (
-    <main>
+    <AnimationCon>
       <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text ">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Squad 2.0: Navigating Challenges, Elevating User Experiences.
           </p>
@@ -34,20 +36,20 @@ function Squad2() {
             <p>manage their own online stores.</p>
           </div>
         </div>
-        <div className="block sm:hidden black_text font-medium mt-5">
+        <div className="block sm:hidden black_text font-medium mt-5 reveal">
           <p>
             Squad is an online platform that helps business owners create and
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
             alt=""
           />
         </div>
-        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -57,11 +59,11 @@ function Squad2() {
               behind the problems, we conducted extensive user research to
               discover pain points, adoption challenges, and market constraints.
             </p>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Role</p>
               <p>Product designer, Researcher</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Methodologies</p>
               <p>
                 User Research, Usability Testing, Product Design, Interactive
@@ -69,11 +71,11 @@ function Squad2() {
                 Design Optimization.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Platform</p>
               <p>Web Application</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
@@ -82,13 +84,14 @@ function Squad2() {
               notion={
                 "https://jhud.notion.site/Squad-2-0-Navigating-Challenges-Elevating-User-Experiences-d8bcd6ffdfe445128b5c31246da9eb80?pvs=4"
               }
+              className="reveal"
             />
           </div>
         </div>
       </BorderBody>
 
       <BorderBody>
-        <div className="sm:w-[481px] m-auto mt-10">
+        <div className="sm:w-[481px] m-auto mt-10 reveal">
           <p className="text-[#8A8A8A]">WHAT WERE OUR GOALS</p>
           <p className="black_text mt-3">
             The goal of this project is to identify and address the reasons why
@@ -96,23 +99,23 @@ function Squad2() {
             onboarding 5,000 merchants and processing $120 million in
             transactions within 6 months.
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-3 reveal">
             Through research, feedback, and testing, we aim to improve the
             platform’s usability, performance, and value to merchants.
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-3 reveal">
             Ultimately, we want to create a more effective, user-friendly
             solution that helps Nigerian businesses thrive in the digital
             economy and achieve the growth they deserve.
           </p>
         </div>
-        <div className="m-auto mt-10">
+        <div className="m-auto mt-10 reveal">
           <Lottie animationData={trans} loop={true} className="w-full h-full" />
         </div>
       </BorderBody>
 
       <BorderBody className="mt-9">
-        <div className="sm:w-[481px] m-auto">
+        <div className="sm:w-[481px] m-auto reveal">
           <p className="text-[#8A8A8A] uppercase">Usability Testing</p>
           <p className="black_text mt-3">
             Through Think-Aloud sessions with 20 participants, we collected
@@ -121,12 +124,12 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="sm:w-[481px] m-auto mt-14">
+        <div className="sm:w-[481px] m-auto mt-14 reveal">
           <p className="text-[#8A8A8A] uppercase">
             KEY INSIGHTS FROM USABILITY TESTING
           </p>
 
-          <ul className="list-decimal ml-4">
+          <ul className="list-decimal ml-4 reveal">
             <li className="black_text mt-3">
               Onboarding was overwhelming - Users were frustrated with lengthy
               KYC processes.
@@ -145,16 +148,16 @@ function Squad2() {
           </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <img src="/Checkout.png" alt="" className="object-cover" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <img src="/Onboard.png" className="object-cover" alt="" />
         </div>
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] m-auto mt-8">
+        <div className="sm:w-[481px] m-auto mt-8 reveal">
           <p className="text-[#8A8A8A] uppercase">
             Collaborative Solution Design
           </p>
@@ -162,14 +165,14 @@ function Squad2() {
             we Conducted design workshops to brainstorm solutions.
           </p>
 
-          <div className="black_text mt-3">
+          <div className="black_text mt-3 reveal">
             <p>For onboarding</p>
             <p>
               Checkout Dissatisfaction - Navigation was unclear, and payment
               methods lacked flexibility.
             </p>
           </div>
-          <div className="black_text mt-3">
+          <div className="black_text mt-3 reveal">
             <p>For checkout</p>
             <p>
               A/B Tested horizontal tabs and accordion layouts for payment
@@ -177,7 +180,7 @@ function Squad2() {
             </p>
           </div>
 
-          <div className="black_text mt-3">
+          <div className="black_text mt-3 reveal">
             <p>For navigation</p>
             <p>
               Used card sorting with 50 participants to reorganise content to
@@ -186,19 +189,19 @@ function Squad2() {
           </div>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-24 reveal">
           <Lottie animationData={wire} loop={true} className="w-full h-full" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <Lottie animationData={wire2} loop={true} className="w-full h-full" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <img src="/First step1.png" alt="" />
         </div>
       </BorderBody>
 
       <BorderBody className="">
-        <div className="sm:w-[481px] m-auto mt-9">
+        <div className="sm:w-[481px] m-auto mt-9 reveal">
           <p className="text-[#8A8A8A] uppercase">Testing Solutions</p>
           <p className="black_text mt-3">
             A/B testing and usability testing confirmed improvements.
@@ -212,7 +215,7 @@ function Squad2() {
           </p>
         </div>
 
-        <div className="m-auto sm:h-[280px] lg:w-[480px] sm:w-[85%] w-full mt-24">
+        <div className="m-auto sm:h-[280px] lg:w-[480px] sm:w-[85%] w-full mt-24 reveal">
           <img
             src="/Frame 8 1.png"
             className="object-cover w-full h-full"
@@ -221,17 +224,17 @@ function Squad2() {
         </div>
       </BorderBody>
       <BorderBody className="">
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-20">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-20 reveal">
           <Lottie
             animationData={squad2}
             loop={true}
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <img src="/First-step.png" alt="" />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <Lottie
             animationData={squad2w}
             loop={true}
@@ -241,7 +244,7 @@ function Squad2() {
       </BorderBody>
 
       <BorderBody className="mt-8">
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text reveal">
           <p>RESULTS AND IMPACT</p>
           <div className="sm:w-[510px] black_text exper ">
             <div className="">
@@ -252,7 +255,7 @@ function Squad2() {
               </p>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 reveal">
               <p className="font-roboto-mono text-lg">$270M</p>
               <p className="mt-3">
                 Exceeded our goal of facilitating $120 million in transactions
@@ -261,22 +264,23 @@ function Squad2() {
               </p>
             </div>
 
-            <div className="mt-14 flex items-center gap-3 font-roboto-mono">
+            <div className="mt-14 flex items-center gap-3 font-roboto-mono reveal">
               <Link
                 href={
                   "https://jhud.notion.site/Squad-2-0-Navigating-Challenges-Elevating-User-Experiences-d8bcd6ffdfe445128b5c31246da9eb80?pvs=4"
                 }
                 className="text-[#8A8A8A] text-xs"
+                target="_blank"
               >
-                READ FULL CASE STUDY ON NOTION
+                <TypingEffect word=" READ FULL CASE STUDY ON NOTION" />
               </Link>
               <HiArrowRight size={16} />
             </div>
           </div>
         </div>
       </BorderBody>
-      <Footer />
-    </main>
+      <Footer className="reveal" />
+    </AnimationCon>
   );
 }
 

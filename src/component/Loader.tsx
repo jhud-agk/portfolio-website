@@ -4,33 +4,63 @@
 import { useGSAP } from "@gsap/react";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import TypingEffect from "./TypingEffect";
 
 function Loader() {
   const boxesRef = useRef<(HTMLDivElement | null)[]>([]);
   const [counter, setCounter] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [paused, setPaused] = useState(false);
 
   function updateCounter() {
-    if (counter === 100) {
+    if (counter >= 100) return;
+
+    if (paused) {
+      // If paused, wait and then continue
+      const resumeDelay = Math.floor(Math.random() * 2000) + 1000; // Pause for 1-3 sec
+      timeoutRef.current = setTimeout(() => {
+        setPaused(false);
+        updateCounter();
+      }, resumeDelay);
       return;
     }
-    setCounter(counter + Math.floor(Math.random() * 10) + 1);
-    if (counter > 100) {
-      setCounter(100);
+
+    // Random increment, sometimes small, sometimes big
+    const increment =
+      Math.random() > 0.6
+        ? Math.floor(Math.random() * 3) + 1
+        : Math.floor(Math.random() * 8) + 2;
+    setCounter((prev) => Math.min(prev + increment, 100));
+
+    // Random delay, sometimes fast, sometimes slow
+    let delay =
+      Math.random() > 0.7
+        ? Math.floor(Math.random() * 300) + 100
+        : Math.floor(Math.random() * 150) + 50;
+
+    // Introduce a random pause at times
+    if (Math.random() > 0.8 && counter > 30 && counter < 90) {
+      setPaused(true);
+      delay += Math.floor(Math.random() * 3000) + 1000; // Extend delay by 1-4 sec
     }
+
+    timeoutRef.current = setTimeout(updateCounter, delay);
   }
 
   useEffect(() => {
-    // updateCounter();
-    // const delay = Math.floor(Math.random() * 200) + 50;
-    setTimeout(updateCounter, 100);
-  }, [counter]);
+    timeoutRef.current = setTimeout(updateCounter, 100);
+
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   useGSAP(() => {
-    if (counter >= 70) {
+    if (counter >= 60) {
       gsap.to(boxesRef.current, {
         height: 0,
-        // duration: 0.5,
-        delay: 3,
+        duration: 1,
+        delay: 1,
         stagger: {
           amount: 0.1,
         },
@@ -39,7 +69,12 @@ function Loader() {
     }
 
     gsap.to("#counter", {
-      delay: 3.5,
+      delay: 3,
+      opacity: 0,
+      display: "none",
+    });
+    gsap.to("#count", {
+      delay: 3,
       opacity: 0,
       display: "none",
     });
@@ -48,13 +83,16 @@ function Loader() {
     <main className="fixed top-0 left-0 w-screen flex h-screen">
       <div
         id="counter"
-        className="absolute font-roboto-mono text-white top-[20px] left-[100px]"
+        className="absolute font-roboto-mono text-white top-[20px] left-[55px]"
       >
-        <p>JUDE EJIKE USER EXPERIENCE DESIGNER</p>
-        <p>PORTFOLIO_20/25</p>
+        <TypingEffect speedd={50} word="JUDE EJIKE USER EXPERIENCE DESIGNER" />
+        <TypingEffect speedd={50} word="PORTFOLIO_20/25" />
       </div>
-      <p className="absolute font-roboto-mono text-white text-[200px] bottom-[30px] left-[100px] font-bold">
-        {counter}
+      <p
+        id="count"
+        className="absolute font-roboto-mono text-white phone:text-[160px] text-[60px] bottom-[30px] left-[55px] tracking-wide"
+      >
+        {counter}%
       </p>
       {[...Array(6)].map((_, i) => (
         <div

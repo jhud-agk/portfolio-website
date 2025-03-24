@@ -1,45 +1,26 @@
 "use client";
 // import Loader from "@/component/Loader";
 import ShortInfo from "@/component/ShortInfo";
-// import React, { useEffect } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// import TextAnimation from "@/component/TextWipe";
-// import { useGSAP } from "@gsap/react";
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
-// import { ScrollSmoother } from "gsap/ScrollSmoother";
 import squad from "@/lottie-files/Squad-1.json";
 import squad2New from "@/lottie-files/Landing/Squad 2.json";
 import nhsNew from "@/lottie-files/Landing/NHS.json";
 import bumbleNew from "@/lottie-files/Landing/Bumble.json";
+import AnimationCon from "@/component/AnimationParent";
+// import Lenis from "lenis";
+// import TypingEffect from "@/component/TypingEffect";
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.registerPlugin(ScrollTrigger);
 function Home() {
-  //   useEffect(() => {
-  //     gsap.from(".box", {
-  //       opacity: 0,
-  //       y: 50,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: ".box",
-  //         start: "top 80%", // When the top of the box reaches 80% of the viewport
-  //         toggleActions: "play none none reverse", // Play animation when scrolling down, reverse when scrolling up
-  //       },
-  //     });
-  //   }, []);
-
   return (
-    <main className="font-roboto-mono">
+    <AnimationCon>
       {/* <Loader /> */}
-      <BorderBody className="h-[417px] box" cross={false}>
+      <BorderBody className="h-[417px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <section className="smm:flex justify-between fade_text box">
+        <section className="smm:flex justify-between fade_text box first">
           <div className="flex smm:w-[45%] justify-between">
             <p>[SELECTED WORK]</p>
             <p>PORTFOLIO_20/25</p>
@@ -54,7 +35,7 @@ function Home() {
               user-centred approach.
             </p>
           </div>
-          <div className="block smm:hidden black_text font-medium phone:mt-8 mt-10">
+          <div className="block smm:hidden black_text font-medium phone:mt-8 mt-10 reveal">
             <p>
               User Experience Designer and Researcher based in London, focused
               on user-centred design and storytelling. In my journey as a
@@ -63,14 +44,16 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between box">
+        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between first">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
             className="sm:w-1/3"
             // imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-"
+            imgClass=""
             animation={bumbleNew}
             url="/bumble"
+            textClass=""
           />
           <ShortInfo
             brand="[2] Squad: Empowering African Businesses through Digital Payments"
@@ -79,32 +62,40 @@ function Home() {
             className="sm:w-2/3"
             animation={squad}
             url="/squad1"
+            textClass=""
+            imgClass=""
           />
         </section>
 
-        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 box">
+        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 reveal">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             animation={squad2New}
             url="/squad2"
+            textClass=""
+            imgClass=""
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             animation={nhsNew}
             url="/nhs"
+            textClass=""
+            imgClass=""
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
-            className="sm:w-1/3"
+            className="sm:w-1/3 reveal"
             url="/doorset-digital"
             image={"/Component 1s.png"}
+            textClass=""
+            imgClass=""
           />
         </section>
       </BorderBody>
       {/* <Footer /> */}
-    </main>
+    </AnimationCon>
   );
 }
 

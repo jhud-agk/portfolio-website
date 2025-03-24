@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { ReactLenis } from "@/component/lenis";
+import RefreshLoading from "@/component/RefreshLoading";
+import StartFronTop from "@/component/StartFronTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,8 +20,12 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jude portfolio",
-  description: "",
+  title: "Jude Ejike -  User Experience Designer",
+  description:
+    "Jude Ejike is a User Experience Designer based in London, on a mission to craft experiences that ...",
+  openGraph: {
+    images: "/Preview.png",
+  },
 };
 
 export default function RootLayout({
@@ -28,9 +35,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_mono.variable} ${inter.variable} antialiased`}>
-        {children}
-      </body>
+      <StartFronTop />
+      <ReactLenis root>
+        <body
+          className={`${roboto_mono.variable} ${inter.variable} antialiased`}
+        >
+          <RefreshLoading>{children}</RefreshLoading>
+        </body>
+      </ReactLenis>
     </html>
   );
 }

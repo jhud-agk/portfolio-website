@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.2",
     "date-and-time": "^3.6.0",
     "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "lottie-react": "^2.4.1",
     "next": "15.2.1",
     "react": "^19.0.0",
