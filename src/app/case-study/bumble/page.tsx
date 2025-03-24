@@ -21,7 +21,7 @@ function Bumble() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Reimagining Bumble’s Profile Sharing Experience
           </p>
@@ -43,7 +43,7 @@ function Bumble() {
             encouraging participation.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14 reveal">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img
             src="/bumble 1.png"
             className="object-cover h-full w-full"

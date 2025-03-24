@@ -16,6 +16,7 @@ import GoTo from "@/component/GoTo";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import Link from "next/link";
 import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function Squad2() {
   return (
@@ -24,7 +25,7 @@ function Squad2() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Squad 2.0: Navigating Challenges, Elevating User Experiences.
           </p>
@@ -41,7 +42,7 @@ function Squad2() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14 reveal">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
@@ -269,8 +270,9 @@ function Squad2() {
                   "https://jhud.notion.site/Squad-2-0-Navigating-Challenges-Elevating-User-Experiences-d8bcd6ffdfe445128b5c31246da9eb80?pvs=4"
                 }
                 className="text-[#8A8A8A] text-xs"
+                target="_blank"
               >
-                READ FULL CASE STUDY ON NOTION
+                <TypingEffect word=" READ FULL CASE STUDY ON NOTION" />
               </Link>
               <HiArrowRight size={16} />
             </div>

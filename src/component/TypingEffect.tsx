@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+"use client";
 import React, { useEffect, useState } from "react";
 
 interface CharData {
@@ -11,7 +12,7 @@ interface CharData {
 const TypingEffect = ({ word }: { word: string }) => {
   const text = word;
   const specialChars = "@#$%&*!?+=()^%}{[]/><";
-  const speed = 70; // Adjust speed in milliseconds
+  const speed = 50;
   const [chars, setChars] = useState<CharData[]>([]);
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -24,7 +25,6 @@ const TypingEffect = ({ word }: { word: string }) => {
       showSpecial: false,
     }));
     setChars(charArray);
-    console.log(charArray);
 
     splitText.forEach((_, index) => {
       setTimeout(() => {
@@ -50,38 +50,36 @@ const TypingEffect = ({ word }: { word: string }) => {
         }, speed);
       }, speed * index * 2);
     });
+    console.log(chars, "chall");
   }, []);
 
   const handleHover = () => {
-    if (!animationComplete) return; // Ensure hover effect happens after the typing animation
+    if (!animationComplete) return;
 
-    // Start the hover effect on each character
     chars.forEach((_, index) => {
       setTimeout(() => {
-        // Show special character with black background
         setChars((prevChars) => {
           const newChars = [...prevChars];
           newChars[index] = {
             ...newChars[index],
-            showSpecial: true, // Show special character
+            showSpecial: true,
             display:
-              specialChars[Math.floor(Math.random() * specialChars.length)], // Set random special character
+              specialChars[Math.floor(Math.random() * specialChars.length)],
           };
           return newChars;
         });
 
-        // After the special character shows, transition to the original text with black background
         setTimeout(() => {
           setChars((prevChars) => {
             const newChars = [...prevChars];
             newChars[index] = {
               ...newChars[index],
-              showSpecial: false, // Revert back to the original text
+              showSpecial: false,
             };
             return newChars;
           });
-        }, speed); // Speed at which the text changes back to original
-      }, speed * index); // Delay to ensure each character appears sequentially
+        }, speed);
+      }, speed * index);
     });
   };
 
@@ -101,7 +99,9 @@ const TypingEffect = ({ word }: { word: string }) => {
             }`}
           >
             {char.revealed
-              ? char.original
+              ? char.original === " "
+                ? "\u00A0"
+                : char.original
               : char.showSpecial
               ? char.display
               : " "}

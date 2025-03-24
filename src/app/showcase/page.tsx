@@ -13,7 +13,7 @@ function ShowCase() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">SHOWCASE</p>
           <div className="sm:w-[460px] sm:block hidden black_text font-medium exper">
             <p className="text-right">

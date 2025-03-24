@@ -1,19 +1,21 @@
 //
 
+import AnimationCon from "@/component/AnimationParent";
 import BorderBody from "@/component/BorderBody";
 import Header from "@/component/Header";
+import TypingEffect from "@/component/TypingEffect";
 import Link from "next/link";
 import React from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function About() {
   return (
-    <div>
+    <AnimationCon>
       <BorderBody className="h-[267px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text first">
           <p>ABOUT</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="font-semibold">
@@ -57,42 +59,46 @@ function About() {
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A]"
               >
-                READ.CV <HiMiniArrowUpRight color="#18181B" size={16} />
+                <TypingEffect word="READ.CV" />
+                <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
               <Link
                 href={"https://www.linkedin.com/in/jude-ejike/"}
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A] mt-2"
               >
-                LINKEDIN <HiMiniArrowUpRight color="#18181B" size={16} />
+                <TypingEffect word="LINKEDIN" />
+                <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
               <Link
                 href={"https://www.are.na/jude-ejike/channels"}
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A] mt-2"
               >
-                ARE.NA <HiMiniArrowUpRight color="#18181B" size={16} />
+                <TypingEffect word="ARE.NA" />
+                <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
               <Link
                 href={"https://www.instagram.com/jhud_agk/"}
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A] mt-2"
               >
-                INSTAGRAM <HiMiniArrowUpRight color="#18181B" size={16} />
+                <TypingEffect word="INSTAGRAM" />
+                <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
               <Link
-                href={"mailto:JUDEEJIKEUX@GMAIL.COM"}
+                href={"mailto:judeejikeux@gmail.com"}
                 target="_blank"
                 className="flex items-center gap-2 text-[#8A8A8A] mt-2"
               >
-                JUDEEJIKEUX@GMAIL.COM{" "}
+                <TypingEffect word="JUDEEJIKEUX@GMAIL.COM" />{" "}
                 <HiMiniArrowUpRight color="#18181B" size={16} />
               </Link>
             </div>
           </div>
         </div>
       </BorderBody>
-    </div>
+    </AnimationCon>
   );
 }
 

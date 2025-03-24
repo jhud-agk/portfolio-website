@@ -20,7 +20,7 @@ function Home() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <section className="smm:flex justify-between fade_text box reveal">
+        <section className="smm:flex justify-between fade_text box first">
           <div className="flex smm:w-[45%] justify-between">
             <p>[SELECTED WORK]</p>
             <p>PORTFOLIO_20/25</p>
@@ -44,16 +44,16 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between reveal">
+        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between first">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
             className="sm:w-1/3"
             // imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-"
-            imgClass="reveal"
+            imgClass=""
             animation={bumbleNew}
             url="/bumble"
-            textClass="reveal"
+            textClass=""
           />
           <ShortInfo
             brand="[2] Squad: Empowering African Businesses through Digital Payments"
@@ -62,8 +62,8 @@ function Home() {
             className="sm:w-2/3"
             animation={squad}
             url="/squad1"
-            textClass="reveal"
-            imgClass="reveal"
+            textClass=""
+            imgClass=""
           />
         </section>
 
