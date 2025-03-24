@@ -14,7 +14,7 @@ function RefreshLoading({ children }: { children: ReactNode }) {
       setTimeout(() => {
         setShowLoader(false);
         sessionStorage.setItem("visited", "true");
-      }, 5300); // Loader duration (adjust as needed)
+      }, 5400); // Loader duration (adjust as needed)
     }
   }, []);
   return <main>{showLoader ? <Loader /> : children}</main>;

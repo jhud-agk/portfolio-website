@@ -35,8 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <StartFronTop />
       <ReactLenis root>
-        <StartFronTop />
         <body
           className={`${roboto_mono.variable} ${inter.variable} antialiased`}
         >
