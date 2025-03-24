@@ -1,5 +1,5 @@
 //
-"use cleint";
+"use client";
 import React, { ReactNode, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -26,10 +26,10 @@ function AnimationCon({
         ease: "power2.out",
         scrollTrigger: {
           trigger: el,
-          // start: "top 80%",
+          start: "top 40%",
           // toggleActions: "play none none reverse",
-          start: "top bottom",
-          end: "top center",
+          // start: "top bottom",
+          // end: "top center",
           toggleActions: "play none none none",
         },
         scrub: 1,

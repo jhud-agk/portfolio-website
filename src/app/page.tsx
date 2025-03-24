@@ -35,7 +35,7 @@ function Home() {
               user-centred approach.
             </p>
           </div>
-          <div className="block smm:hidden black_text font-medium phone:mt-8 mt-10">
+          <div className="block smm:hidden black_text font-medium phone:mt-8 mt-10 reveal">
             <p>
               User Experience Designer and Researcher based in London, focused
               on user-centred design and storytelling. In my journey as a
@@ -48,10 +48,12 @@ function Home() {
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
-            className="sm:w-1/3 "
+            className="sm:w-1/3"
             // imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-"
+            imgClass="reveal"
             animation={bumbleNew}
             url="/bumble"
+            textClass="reveal"
           />
           <ShortInfo
             brand="[2] Squad: Empowering African Businesses through Digital Payments"
@@ -60,6 +62,8 @@ function Home() {
             className="sm:w-2/3"
             animation={squad}
             url="/squad1"
+            textClass="reveal"
+            imgClass="reveal"
           />
         </section>
 
@@ -69,18 +73,24 @@ function Home() {
             className="sm:w-1/3"
             animation={squad2New}
             url="/squad2"
+            textClass="reveal"
+            imgClass="reveal"
           />
           <ShortInfo
             brand="[4] UX Research Case Study on the NHS App"
             className="sm:w-1/3"
             animation={nhsNew}
             url="/nhs"
+            textClass="reveal"
+            imgClass="reveal"
           />
           <ShortInfo
             brand="[5] Usability Evaluation of Our Dorset Digital"
             className="sm:w-1/3"
             url="/doorset-digital"
             image={"/Component 1s.png"}
+            textClass="reveal"
+            imgClass="reveal"
           />
         </section>
       </BorderBody>

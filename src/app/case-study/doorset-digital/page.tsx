@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 //
 
+import AnimationCon from "@/component/AnimationParent";
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
@@ -10,12 +11,12 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function DigitalDoorset() {
   return (
-    <main>
+    <AnimationCon>
       <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text">
+        <div className="flex justify-between fade_text reveal">
           <p className="uppercase">
             Usability Evaluation of Our Dorset Digital
           </p>
@@ -30,17 +31,17 @@ function DigitalDoorset() {
             </p>
           </div>
         </div>
-        <div className="block sm:hidden black_text font-medium mt-5">
+        <div className="block sm:hidden black_text font-medium mt-5 reveal">
           <p>
             Our Dorset Digital is a program focused on creating and using
             digital tools to improve healthcare for Dorset residents, NHS staff,
             and frontline teams.
           </p>
         </div>
-        <div className="w-full mt-24">
+        <div className="w-full mt-24 reveal">
           <img src="/mock-2.png" alt="" />
         </div>
-        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <p className="">
@@ -49,26 +50,26 @@ function DigitalDoorset() {
               navigation issues, confusing content structure, and unclear design
               patterns.
             </p>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Role</p>
               <p>Lead User Researcher</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Methodologies</p>
               <p>
                 Qualitative and Quantitative research methods, Think-aloud,
                 Heuristic Evaluation, Information architecture.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Team</p>
               <p>Jude Ejike, Seyi Owolawi, Bukunmi Weke</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q4 2022 - Q1 2023</p>
             </div>
-            <div className="mt-10 flex items-center gap-3 ">
+            <div className="mt-10 flex items-center gap-3 reveal">
               <Link
                 href={
                   "https://jhud.notion.site/Usability-Evaluation-of-Our-Dorset-Digital-17eaf8134be2807ca650ec64a46671e4?pvs=4"
@@ -86,7 +87,7 @@ function DigitalDoorset() {
         </div>
       </BorderBody>
       <BorderBody className="mt-8">
-        <div className="sm:w-[481px] m-auto">
+        <div className="sm:w-[481px] m-auto reveal">
           <p className="text-[#8A8A8A] uppercase">
             what where our research goals
           </p>
@@ -94,7 +95,7 @@ function DigitalDoorset() {
             As the Lead UX Researcher, my main objectives were:
           </p>
 
-          <ul className="list-decimal black_text ml-5 font-inter">
+          <ul className="list-decimal black_text ml-5 font-inter reveal">
             <li className="mt-3">
               Uncover usability issues to inform actionable design improvements.
             </li>
@@ -109,12 +110,12 @@ function DigitalDoorset() {
           </ul>
         </div>
 
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <img src="/blurred image.png" alt="" />
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text reveal">
           <p>DESIGN METHODOLOGY & PROCESS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -125,21 +126,21 @@ function DigitalDoorset() {
                 participants for in-depth Interviews.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Ethnographic Research</p>
               <p>
                 I observed users navigating the app in their everyday settings
                 —at home, how they booked GP visits, or order prescriptions.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Wireframes</p>
               <p>
                 I created wireframes which were direct result of the data
                 collection and were essential for the usability testing session.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Usability Testing </p>
               <p>
                 For test solutions, I conducted usability tests using the think
@@ -147,7 +148,7 @@ function DigitalDoorset() {
                 solution met their expectations
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>System Usability Questionnaire (SUS)</p>
               <p>
                 I used the SUS questionnaire to measure the perceived usability
@@ -156,12 +157,12 @@ function DigitalDoorset() {
             </div>
           </div>
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <img src="/new.png" alt="" />
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text sm:mt-8">
+        <div className="sm:flex justify-between fade_text sm:mt-8 reveal">
           <p className="uppercase">Recommendations based on Insights</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -172,7 +173,7 @@ function DigitalDoorset() {
                 function to help users locate information more easily.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Simplify Content</p>
               <p>
                 Reduce jargon and summarise complex content to improve
@@ -180,7 +181,7 @@ function DigitalDoorset() {
                 information.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Enhance Visibility of Resources</p>
               <p>
                 Make critical resources, like the healthcare library, more
@@ -192,7 +193,7 @@ function DigitalDoorset() {
         </div>
       </BorderBody>
       <BorderBody>
-        <div className="sm:flex justify-between fade_text sm:mt-8">
+        <div className="sm:flex justify-between fade_text sm:mt-8 reveal">
           <p className="uppercase">Potential Impact From Findings</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -204,14 +205,14 @@ function DigitalDoorset() {
                 errors and completion times.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>
                 Simplifying language and restructuring information could lead to
                 higher system usability scale (SUS) scores and significantly
                 reduce user frustration.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>
                 Clearer categorisation and reducing the priming effect by better
                 distinguishing key information could prevent users from
@@ -222,8 +223,8 @@ function DigitalDoorset() {
           </div>
         </div>
       </BorderBody>
-      <Footer />
-    </main>
+      <Footer className="reveal" />
+    </AnimationCon>
   );
 }
 
