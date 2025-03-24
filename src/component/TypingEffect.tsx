@@ -50,7 +50,6 @@ const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
         }, speed);
       }, speed * index * 2);
     });
-    console.log(chars, "chall");
   }, []);
 
   const handleHover = () => {

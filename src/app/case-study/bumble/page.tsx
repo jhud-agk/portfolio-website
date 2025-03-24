@@ -14,10 +14,12 @@ import GoTo from "@/component/GoTo";
 import Link from "next/link";
 import AnimationCon from "@/component/AnimationParent";
 import TypingEffect from "@/component/TypingEffect";
+// import StartFronTop from "@/component/StartFronTop";
 
 function Bumble() {
   return (
     <AnimationCon>
+      {/* <StartFronTop /> */}
       <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
