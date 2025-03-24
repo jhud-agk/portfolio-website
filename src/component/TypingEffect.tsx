@@ -9,10 +9,10 @@ interface CharData {
   showSpecial: boolean;
 }
 
-const TypingEffect = ({ word }: { word: string }) => {
+const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
   const text = word;
   const specialChars = "@#$%&*!?+=()^%}{[]/><";
-  const speed = 50;
+  const speed = speedd || 50;
   const [chars, setChars] = useState<CharData[]>([]);
   const [animationComplete, setAnimationComplete] = useState(false);
 

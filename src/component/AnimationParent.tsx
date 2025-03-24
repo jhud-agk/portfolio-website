@@ -44,7 +44,9 @@ function AnimationCon({
         y: 50,
         duration: 2,
         ease: "power2.out",
-        stagger: 3,
+        stagger: {
+          amount: 1.5,
+        },
         // scrollTrigger: {
         //   trigger: el,
         //   start: "top 100%",
