@@ -3,6 +3,7 @@ import { Roboto_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from "@/component/lenis";
 import RefreshLoading from "@/component/RefreshLoading";
+import StartFronTop from "@/component/StartFronTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ReactLenis root>
+        <StartFronTop />
         <body
           className={`${roboto_mono.variable} ${inter.variable} antialiased`}
         >
