@@ -12,7 +12,7 @@ interface CharData {
 const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
   const text = word;
   const specialChars = "@#$%&*!?+=()^%}{[]/><";
-  const speed = speedd || 50;
+  const speed = speedd || 90;
   const [chars, setChars] = useState<CharData[]>([]);
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -54,7 +54,7 @@ const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
 
   const handleHover = () => {
     if (!animationComplete) return;
-
+    console.log(chars);
     chars.forEach((_, index) => {
       setTimeout(() => {
         setChars((prevChars) => {
@@ -62,8 +62,9 @@ const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
           newChars[index] = {
             ...newChars[index],
             showSpecial: true,
-            display:
-              specialChars[Math.floor(Math.random() * specialChars.length)],
+            revealed: false,
+            // display:
+            //   specialChars[Math.floor(Math.random() * specialChars.length)],
           };
           return newChars;
         });
@@ -74,6 +75,7 @@ const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
             newChars[index] = {
               ...newChars[index],
               showSpecial: false,
+              revealed: true,
             };
             return newChars;
           });

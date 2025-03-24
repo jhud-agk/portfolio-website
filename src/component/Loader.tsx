@@ -85,8 +85,8 @@ function Loader() {
         id="counter"
         className="absolute font-roboto-mono text-white top-[20px] left-[55px]"
       >
-        <TypingEffect word="JUDE EJIKE USER EXPERIENCE DESIGNER" />
-        <TypingEffect word="PORTFOLIO_20/25" />
+        <TypingEffect speedd={50} word="JUDE EJIKE USER EXPERIENCE DESIGNER" />
+        <TypingEffect speedd={50} word="PORTFOLIO_20/25" />
       </div>
       <p
         id="count"
