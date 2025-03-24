@@ -19,8 +19,12 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jude portfolio",
-  description: "",
+  title: "Jude Ejike -  User Experience Designer",
+  description:
+    "Jude Ejike is a User Experience Designer based in London, on a mission to craft experiences that ...",
+  openGraph: {
+    images: "/Preview.png",
+  },
 };
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ import React, { ReactNode, useEffect, useState } from "react";
 import Loader from "./Loader";
 
 function RefreshLoading({ children }: { children: ReactNode }) {
-  const [showLoader, setShowLoader] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     const isPageRefreshed = true;
