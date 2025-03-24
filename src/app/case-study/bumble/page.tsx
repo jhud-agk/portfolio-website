@@ -59,11 +59,11 @@ function Bumble() {
               recommend a profile. This poses challenges in terms of finding the
               profile on Bumble and creates a suboptimal user experience.
             </p>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Role</p>
               <p>Product designer, Researcher</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Methodologies</p>
               <p>
                 User Research, Usability Testing, Product Design, Interactive
@@ -71,11 +71,11 @@ function Bumble() {
                 Design Optimization.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Platform</p>
               <p>iOS and Android</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
             </div>
@@ -86,6 +86,7 @@ function Bumble() {
               notion={
                 "https://jhud.notion.site/Reimagining-Bumbles-Profile-Sharing-Experience-e42ba09c4dc346989839363557828a03?pvs=4"
               }
+              className="reveal"
             />
           </div>
         </div>
@@ -100,13 +101,13 @@ function Bumble() {
             profiles to their friends while ensuring recipients can quickly find
             the shared user within the app
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-3 reveal">
             This feature encourages users to share profiles, fostering
             connections and increasing activity on Bumble. When users recommend
             profiles to friends, it can attract new users, boosting
             subscriptions and expanding the user base.
           </p>
-          <p className="black_text mt-3">
+          <p className="black_text mt-3 reveal">
             The experiment&apos;s main goal is to improve the profile-sharing
             experience, making it easier to recommend profiles and encouraging
             more sharing. This can lead to increased referrals, more new users,
@@ -114,7 +115,7 @@ function Bumble() {
             platforms.
           </p>
 
-          <div className="sm:h-[500px] h-[300px] relative m-auto sm:w-[481px] mt-14">
+          <div className="sm:h-[500px] h-[300px] relative m-auto sm:w-[481px] mt-14 reveal">
             <video
               src="/Bumble-video.mp4"
               autoPlay
@@ -155,21 +156,21 @@ function Bumble() {
                 user experience.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Team Collaboration</p>
               <p>
                 We Analysed findings to define user stories, flows, and
                 jobs-to-be-done. Brainstormed potential solutions as a team.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Crazy 8 Workshop </p>
               <p>
                 We Visualised multiple design ideas to explore diverse
                 solutions.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Wireframes</p>
               <p>
                 I Created 5 design directions with pros, cons, and
@@ -177,14 +178,14 @@ function Bumble() {
                 prioritisation mapping for all options.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Decision Making</p>
               <p>
                 Used dot voting to select the best solution and I developed a
                 high-fidelity interactive prototype.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>User Testing</p>
               <p>
                 Tested the prototype with 10 participants, identified and
@@ -193,7 +194,7 @@ function Bumble() {
               </p>
             </div>
 
-            <div className="mt-5">
+            <div className="mt-5 reveal">
               <p>Focus Group</p>
               <p>
                 To gain a deeper understanding of the concerns and preferences
@@ -210,7 +211,7 @@ function Bumble() {
             className="w-full h-full"
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <img src="/image 1.png" alt="" />
         </div>
       </BorderBody>
@@ -227,7 +228,7 @@ function Bumble() {
               </p>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 reveal">
               <p className="font-roboto-mono text-lg">227,000</p>
               <p className="mt-3">
                 New accounts were created — Highlighted the effectiveness of
@@ -235,7 +236,7 @@ function Bumble() {
               </p>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 reveal">
               <p className="font-roboto-mono text-lg">4%</p>
               <p className="mt-3">
                 Increase in ARPU — Demonstrated how premium features and in-app
@@ -244,7 +245,7 @@ function Bumble() {
               </p>
             </div>
 
-            <div className="mt-14 flex items-center gap-3 ">
+            <div className="mt-14 flex items-center gap-3 reveal">
               <Link
                 href={
                   "https://jhud.notion.site/Reimagining-Bumbles-Profile-Sharing-Experience-e42ba09c4dc346989839363557828a03?pvs=4"
@@ -258,7 +259,7 @@ function Bumble() {
           </div>
         </div>
       </BorderBody>
-      <Footer />
+      <Footer className="reveal" />
     </AnimationCon>
   );
 }
