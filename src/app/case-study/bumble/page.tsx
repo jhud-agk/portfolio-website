@@ -13,6 +13,7 @@ import bumble2 from "@/lottie-files/Bumble-2.json";
 import GoTo from "@/component/GoTo";
 import Link from "next/link";
 import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function Bumble() {
   return (
@@ -252,7 +253,7 @@ function Bumble() {
                 }
                 className="text-[#8A8A8A] text-xs font-roboto-mono"
               >
-                READ FULL CASE STUDY ON NOTION
+                <TypingEffect word="READ FULL CASE STUDY ON NOTION" />
               </Link>
               <HiArrowRight size={16} />
             </div>

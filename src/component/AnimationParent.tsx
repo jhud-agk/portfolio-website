@@ -22,13 +22,13 @@ function AnimationCon({
     elements.forEach((el) => {
       gsap.from(el, {
         opacity: 0,
-        y: 50,
+        y: 100,
         duration: 2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: el,
-          start: "top 40%",
-          // start: "top 40%",
+          // start: "bottom 40%",
+          start: "top 90%",
           // toggleActions: "play none none reverse",
           // start: "top bottom",
           // end: "top center",

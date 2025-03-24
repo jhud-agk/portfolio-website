@@ -44,18 +44,26 @@ function Loader() {
       opacity: 0,
       display: "none",
     });
+    gsap.to("#count", {
+      delay: 3.5,
+      opacity: 0,
+      display: "none",
+    });
   }, [counter]);
   return (
     <main className="fixed top-0 left-0 w-screen flex h-screen">
       <div
         id="counter"
-        className="absolute font-roboto-mono text-white top-[20px] left-[100px]"
+        className="absolute font-roboto-mono text-white top-[20px] left-[55px]"
       >
         <TypingEffect word="JUDE EJIKE USER EXPERIENCE DESIGNER" />
         <TypingEffect word="PORTFOLIO_20/25" />
       </div>
-      <p className="absolute font-roboto-mono text-white text-[200px] bottom-[30px] left-[100px] font-bold">
-        {counter}
+      <p
+        id="count"
+        className="absolute font-roboto-mono text-white phone:text-[160px] text-[60px] bottom-[30px] left-[55px] tracking-wide"
+      >
+        {counter}%
       </p>
       {[...Array(6)].map((_, i) => (
         <div
