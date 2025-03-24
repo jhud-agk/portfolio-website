@@ -9,7 +9,10 @@ function Header() {
   const [time] = useState(new Date());
   return (
     <header className=" flex justify-between">
-      <Link href={"/"} className="fade_text phone:flex phone:gap-2">
+      <Link
+        href={"/"}
+        className="fade_text phone:flex items-center phone:gap-2"
+      >
         {/* <TextAnimation text={"JUDEEJIKE_LDN 01.03 PM"} /> */}
         <TypingEffect word={`JUDEEJIKE_LDN`} />
         <p>{date.format(time, "hh.mm A")}</p>

@@ -5,6 +5,7 @@ import AnimationCon from "@/component/AnimationParent";
 import BorderBody from "@/component/BorderBody";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
+import TypingEffect from "@/component/TypingEffect";
 import Link from "next/link";
 import React from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
@@ -16,7 +17,7 @@ function DigitalDoorset() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Usability Evaluation of Our Dorset Digital
           </p>
@@ -38,7 +39,7 @@ function DigitalDoorset() {
             and frontline teams.
           </p>
         </div>
-        <div className="w-full mt-24 reveal">
+        <div className="w-full mt-24 first">
           <img src="/mock-2.png" alt="" />
         </div>
         <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
@@ -77,9 +78,9 @@ function DigitalDoorset() {
                 target="_blank"
                 className="flex items-center gap-2 "
               >
-                <p className="text-[#8A8A8A] text-xs font-roboto-mono">
-                  READ FULL CASE STUDY ON NOTION
-                </p>
+                <div className="text-[#8A8A8A] text-xs font-roboto-mono">
+                  <TypingEffect word="READ FULL CASE STUDY ON NOTION" />
+                </div>
                 <HiMiniArrowUpRight size={16} />
               </Link>
             </div>

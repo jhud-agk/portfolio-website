@@ -14,6 +14,7 @@ import nhs2 from "@/lottie-files/NHS - 2.json";
 import GoTo from "@/component/GoTo";
 import Link from "next/link";
 import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function NHS1() {
   return (
@@ -22,7 +23,7 @@ function NHS1() {
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">UX Research Case Study on the NHS App</p>
           <div className="sm:w-[480px] sm:block hidden black_text font-medium exper">
             <p className="text-right">
@@ -39,7 +40,7 @@ function NHS1() {
             encouraging participation.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14 reveal">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img src="/mock 1.png" alt="" />
         </div>
         <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
@@ -274,8 +275,9 @@ function NHS1() {
                   "https://jhud.notion.site/A-UX-Research-Case-Study-on-the-NHS-App-94b640a96be94ccb90939544c103b90b?pvs=4"
                 }
                 className="text-[#8A8A8A] text-xs font-roboto-mono"
+                target="_blank"
               >
-                READ FULL CASE STUDY ON NOTION
+                <TypingEffect word="READ FULL CASE STUDY ON NOTION" />
               </Link>
               <HiMiniArrowUpRight color="#18181B" size={16} />
             </div>

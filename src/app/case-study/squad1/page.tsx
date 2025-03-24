@@ -15,6 +15,7 @@ import squad3 from "@/lottie-files/Squad-3.json";
 import GoTo from "@/component/GoTo";
 import Link from "next/link";
 import AnimationCon from "@/component/AnimationParent";
+import TypingEffect from "@/component/TypingEffect";
 
 function Squad1() {
   return (
@@ -24,7 +25,7 @@ function Squad1() {
       </BorderBody>
 
       <BorderBody className="">
-        <div className="flex justify-between fade_text reveal">
+        <div className="flex justify-between fade_text first">
           <p className="uppercase">
             Squad: Empowering African Businesses through Digital Payments
           </p>
@@ -41,7 +42,7 @@ function Squad1() {
             manage their own online stores.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14 reveal">
+        <div className="w-full sm:mt-24 mt-14 first">
           <img
             src="/squad_banner.png"
             className="w-full h-full object-cover"
@@ -274,7 +275,7 @@ function Squad1() {
 
             <div className="mt-10 flex items-center gap-3 font-roboto-mono reveal">
               <Link href={"/case-study/squad2"} className="text-[#8A8A8A]">
-                READ ABOUT THE CHALLENGES WE FACED ON THE NEXT PAGE
+                <TypingEffect word=" READ ABOUT THE CHALLENGES WE FACED ON THE NEXT PAGE" />
               </Link>
               <HiArrowRight size={16} />
             </div>

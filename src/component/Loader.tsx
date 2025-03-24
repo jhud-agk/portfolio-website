@@ -4,6 +4,7 @@
 import { useGSAP } from "@gsap/react";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import TypingEffect from "./TypingEffect";
 
 function Loader() {
   const boxesRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -50,8 +51,8 @@ function Loader() {
         id="counter"
         className="absolute font-roboto-mono text-white top-[20px] left-[100px]"
       >
-        <p>JUDE EJIKE USER EXPERIENCE DESIGNER</p>
-        <p>PORTFOLIO_20/25</p>
+        <TypingEffect word="JUDE EJIKE USER EXPERIENCE DESIGNER" />
+        <TypingEffect word="PORTFOLIO_20/25" />
       </div>
       <p className="absolute font-roboto-mono text-white text-[200px] bottom-[30px] left-[100px] font-bold">
         {counter}

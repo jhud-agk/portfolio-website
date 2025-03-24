@@ -17,6 +17,7 @@ function AnimationCon({
   useEffect(() => {
     // if (!sectionRef.current) return;
     const elements = sectionRef.current!.querySelectorAll(".reveal");
+    const first = sectionRef.current!.querySelectorAll(".first");
 
     elements.forEach((el) => {
       gsap.from(el, {
@@ -27,12 +28,29 @@ function AnimationCon({
         scrollTrigger: {
           trigger: el,
           start: "top 40%",
+          // start: "top 40%",
           // toggleActions: "play none none reverse",
           // start: "top bottom",
           // end: "top center",
           toggleActions: "play none none none",
         },
-        scrub: 1,
+        // scrub: 1,
+      });
+    });
+
+    first.forEach((el) => {
+      gsap.from(el, {
+        opacity: 0,
+        y: 50,
+        duration: 2,
+        ease: "power2.out",
+        stagger: 3,
+        // scrollTrigger: {
+        //   trigger: el,
+        //   start: "top 100%",
+        //   toggleActions: "play none none none",
+        // },
+        // scrub: 1,
       });
     });
   }, []);
