@@ -59,7 +59,7 @@ function Loader() {
     if (counter >= 60) {
       gsap.to(boxesRef.current, {
         height: 0,
-        // duration: 0.5,
+        duration: 1,
         delay: 1,
         stagger: {
           amount: 0.1,
