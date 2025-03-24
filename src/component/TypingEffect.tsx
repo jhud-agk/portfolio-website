@@ -63,8 +63,8 @@ const TypingEffect = ({ word, speedd }: { word: string; speedd?: number }) => {
             ...newChars[index],
             showSpecial: true,
             revealed: false,
-            // display:
-            //   specialChars[Math.floor(Math.random() * specialChars.length)],
+            display:
+              specialChars[Math.floor(Math.random() * specialChars.length)],
           };
           return newChars;
         });
