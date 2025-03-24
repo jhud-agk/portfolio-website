@@ -84,10 +84,7 @@ const TypingEffect = ({ word }: { word: string }) => {
   };
 
   return (
-    <div
-      className="flex justify-center items-center"
-      onMouseEnter={handleHover}
-    >
+    <div className="flex" onMouseEnter={handleHover}>
       {chars.length > 0 &&
         chars.map((char, index) => (
           <span
