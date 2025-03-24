@@ -1,68 +1,26 @@
 "use client";
 // import Loader from "@/component/Loader";
 import ShortInfo from "@/component/ShortInfo";
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// import TextAnimation from "@/component/TextWipe";
-// import { useGSAP } from "@gsap/react";
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
-// import { ScrollSmoother } from "gsap/ScrollSmoother";
 import squad from "@/lottie-files/Squad-1.json";
 import squad2New from "@/lottie-files/Landing/Squad 2.json";
 import nhsNew from "@/lottie-files/Landing/NHS.json";
 import bumbleNew from "@/lottie-files/Landing/Bumble.json";
-import Lenis from "lenis";
-import TypingEffect from "@/component/TypingEffect";
+import AnimationCon from "@/component/AnimationParent";
+// import Lenis from "lenis";
+// import TypingEffect from "@/component/TypingEffect";
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.registerPlugin(ScrollTrigger);
 function Home() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Initialize Lenis smooth scrolling
-    const lenis = new Lenis({
-      autoRaf: true,
-    });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    // GSAP ScrollTrigger animation
-    gsap.from(".fade-in", {
-      opacity: 0,
-      y: 50,
-      duration: 1.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".fade-in",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    return () => {
-      lenis.destroy();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
   return (
-    <main className="font-roboto-mono">
+    <AnimationCon>
       {/* <Loader /> */}
-      <TypingEffect word="Hello, World!" />
-      <BorderBody className="h-[417px] box" cross={false}>
+      <BorderBody className="h-[417px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <section className="smm:flex justify-between fade_text box">
+        <section className="smm:flex justify-between fade_text box reveal">
           <div className="flex smm:w-[45%] justify-between">
             <p>[SELECTED WORK]</p>
             <p>PORTFOLIO_20/25</p>
@@ -86,11 +44,11 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between box">
+        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between reveal">
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
-            className="sm:w-1/3"
+            className="sm:w-1/3 "
             // imgClass="h-[386px] lg:w-[515px] w-full 2xl:h-[450px] 2xl:w-"
             animation={bumbleNew}
             url="/bumble"
@@ -105,7 +63,7 @@ function Home() {
           />
         </section>
 
-        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 box">
+        <section className="sm:flex sm:mt-[250px] justify-between gap-6 items-start pb-36 reveal">
           <ShortInfo
             brand="[3] Squad 2.0: Navigating Challenges, Elevating User Experiences"
             className="sm:w-1/3"
@@ -127,7 +85,7 @@ function Home() {
         </section>
       </BorderBody>
       {/* <Footer /> */}
-    </main>
+    </AnimationCon>
   );
 }
 

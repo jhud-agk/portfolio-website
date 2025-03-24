@@ -11,7 +11,7 @@ interface CharData {
 const TypingEffect = ({ word }: { word: string }) => {
   const text = word;
   const specialChars = "@#$%&*!?+=()^%}{[]/><";
-  const speed = 100; // Adjust speed in milliseconds
+  const speed = 70; // Adjust speed in milliseconds
   const [chars, setChars] = useState<CharData[]>([]);
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -94,7 +94,7 @@ const TypingEffect = ({ word }: { word: string }) => {
         chars.map((char, index) => (
           <span
             key={index}
-            className={`inline-block text-center text-inherit transition-all duration-100 ${
+            className={`inline-block text-inherit transition-all duration-100 ${
               char.showSpecial
                 ? "bg-black text-white"
                 : "bg-transparent text-black"

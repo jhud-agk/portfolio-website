@@ -12,15 +12,16 @@ import bumble1 from "@/lottie-files/Bumble-1.json";
 import bumble2 from "@/lottie-files/Bumble-2.json";
 import GoTo from "@/component/GoTo";
 import Link from "next/link";
+import AnimationCon from "@/component/AnimationParent";
 
 function Bumble() {
   return (
-    <main>
+    <AnimationCon>
       <BorderBody className="h-[337px]" cross={false}>
         <Header />
       </BorderBody>
       <BorderBody className="">
-        <div className="flex justify-between fade_text">
+        <div className="flex justify-between fade_text reveal">
           <p className="uppercase">
             Reimagining Bumble’s Profile Sharing Experience
           </p>
@@ -35,21 +36,21 @@ function Bumble() {
             </p>
           </div>
         </div>
-        <div className="block sm:hidden black_text font-medium mt-8">
+        <div className="block sm:hidden black_text font-medium mt-8 reveal">
           <p>
             Recommending a friend is a free feature that lets bumble users
             safely and easily share a Bumble profile with someone they know,
             encouraging participation.
           </p>
         </div>
-        <div className="w-full sm:mt-24 mt-14">
+        <div className="w-full sm:mt-24 mt-14 reveal">
           <img
             src="/bumble 1.png"
             className="object-cover h-full w-full"
             alt=""
           />
         </div>
-        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14">
+        <div className="sm:flex justify-between fade_text sm:mt-24 mt-14 reveal">
           <p>INTRODUCTION AND DETAILS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-8">
             <p className="">
@@ -91,7 +92,7 @@ function Bumble() {
       </BorderBody>
 
       <BorderBody>
-        <div className="sm:w-[481px] m-auto mt-9">
+        <div className="sm:w-[481px] m-auto mt-9 reveal">
           <p className="text-[#8A8A8A]">BUSINESS GOALS & OBJECTIVES</p>
           <p className="black_text mt-3">
             Introduce a feature that enables in-app profile sharing via
@@ -126,14 +127,14 @@ function Bumble() {
         </div>
       </BorderBody>
       <BorderBody className="sm:mt-20 mt-10">
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full reveal">
           <img
             src="/RecommendToAFriend_Final 1.png"
             className="object-cover"
             alt=""
           />
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full mt-6 reveal">
           <Lottie
             animationData={bumble1}
             loop={true}
@@ -142,7 +143,7 @@ function Bumble() {
         </div>
       </BorderBody>
       <BorderBody className="mt-8">
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text reveal">
           <p>DESIGN METHODOLOGY & PROCESS</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -202,7 +203,7 @@ function Bumble() {
             </div>
           </div>
         </div>
-        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14">
+        <div className="m-auto lg:w-[77%] sm:w-[85%] w-full sm:mt-24 mt-14 reveal">
           <Lottie
             animationData={bumble2}
             loop={true}
@@ -215,7 +216,7 @@ function Bumble() {
       </BorderBody>
 
       <BorderBody className="mt-8">
-        <div className="sm:flex justify-between fade_text">
+        <div className="sm:flex justify-between fade_text reveal">
           <p>RESULTS AND IMPACT</p>
           <div className="sm:w-[510px] black_text exper sm:mt-0 mt-6">
             <div className="">
@@ -258,7 +259,7 @@ function Bumble() {
         </div>
       </BorderBody>
       <Footer />
-    </main>
+    </AnimationCon>
   );
 }
 
