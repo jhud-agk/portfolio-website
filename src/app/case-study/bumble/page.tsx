@@ -78,10 +78,10 @@ function Bumble() {
               <p>Platform</p>
               <p>iOS and Android</p>
             </div>
-            <div className="mt-5 reveal">
+            {/* <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
-            </div>
+            </div> */}
             <GoTo
               website={
                 "https://bumble.com/en/the-buzz/bumble-recommend-to-a-friend"
