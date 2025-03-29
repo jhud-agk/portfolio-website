@@ -16,8 +16,7 @@ function Loader() {
     if (counter >= 100) return;
 
     if (paused) {
-      // If paused, wait and then continue
-      const resumeDelay = Math.floor(Math.random() * 2000) + 1000; // Pause for 1-3 sec
+      const resumeDelay = Math.floor(Math.random() * 2000) + 1000;
       timeoutRef.current = setTimeout(() => {
         setPaused(false);
         updateCounter();
@@ -25,23 +24,20 @@ function Loader() {
       return;
     }
 
-    // Random increment, sometimes small, sometimes big
     const increment =
       Math.random() > 0.6
         ? Math.floor(Math.random() * 3) + 1
         : Math.floor(Math.random() * 8) + 2;
     setCounter((prev) => Math.min(prev + increment, 100));
 
-    // Random delay, sometimes fast, sometimes slow
     let delay =
       Math.random() > 0.7
         ? Math.floor(Math.random() * 300) + 100
         : Math.floor(Math.random() * 150) + 50;
 
-    // Introduce a random pause at times
     if (Math.random() > 0.8 && counter > 30 && counter < 90) {
       setPaused(true);
-      delay += Math.floor(Math.random() * 3000) + 1000; // Extend delay by 1-4 sec
+      delay += Math.floor(Math.random() * 3000) + 1000;
     }
 
     timeoutRef.current = setTimeout(updateCounter, delay);

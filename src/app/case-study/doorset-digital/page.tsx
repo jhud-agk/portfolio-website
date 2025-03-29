@@ -66,10 +66,10 @@ function DigitalDoorset() {
               <p>Team</p>
               <p>Jude Ejike, Seyi Owolawi, Bukunmi Weke</p>
             </div>
-            <div className="mt-5 reveal">
+            {/* <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q4 2022 - Q1 2023</p>
-            </div>
+            </div> */}
             <div className="mt-10 flex items-center gap-3 reveal">
               <Link
                 href={
