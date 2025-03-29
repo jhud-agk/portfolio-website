@@ -68,10 +68,10 @@ function NHS1() {
               <p>Platform</p>
               <p>Mobile Application</p>
             </div>
-            <div className="mt-5 reveal">
+            {/* <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q1 2023 - Q1 2023</p>
-            </div>
+            </div> */}
             <GoTo
               website={
                 "https://digital.nhs.uk/blog/design-matters/2024/behind-the-scenes-publishing-the-new-nhs-website-homepage"

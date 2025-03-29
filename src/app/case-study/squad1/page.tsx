@@ -76,10 +76,10 @@ function Squad1() {
               <p>Platform</p>
               <p>Web Application</p>
             </div>
-            <div className="mt-5 reveal">
+            {/* <div className="mt-5 reveal">
               <p>Timeline</p>
               <p>Q3 2022 - Q1 2023</p>
-            </div>
+            </div> */}
             <GoTo
               website={"https://squadco.com/"}
               notion={
