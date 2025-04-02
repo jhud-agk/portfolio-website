@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import date from "date-and-time";
 import TypingEffect from "./TypingEffect";
 
-function Header() {
+function Header({ func }: { func?: () => void }) {
   const [time] = useState(new Date());
   return (
     <header className=" flex justify-between">
@@ -19,6 +19,16 @@ function Header() {
       </Link>
       <div className="flex phone:gap-10 phone:items-center items-start gap-3 fade_text">
         <div className="flex smm:flex-row flex-col smm:gap-8 fade_text">
+          {func !== undefined ? (
+            <div onClick={func} className="cursor-pointer">
+              <TypingEffect word="WORK" />
+            </div>
+          ) : (
+            <Link onClick={func} href={"/"}>
+              <TypingEffect word="WORK" />
+            </Link>
+          )}
+
           <Link href={"/showcase"}>
             <TypingEffect word="SHOWCASE" />
           </Link>
