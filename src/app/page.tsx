@@ -1,5 +1,6 @@
 "use client";
 // import Loader from "@/component/Loader";
+import { useRef } from "react";
 import ShortInfo from "@/component/ShortInfo";
 
 import Header from "@/component/Header";
@@ -13,11 +14,16 @@ import AnimationCon from "@/component/AnimationParent";
 // import TypingEffect from "@/component/TypingEffect";
 
 function Home() {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const scrollToTarget = () => {
+    targetRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <AnimationCon>
       {/* <Loader /> */}
       <BorderBody className="h-[417px]" cross={false}>
-        <Header />
+        <Header func={scrollToTarget} />
       </BorderBody>
       <BorderBody className="">
         <section className="smm:flex justify-between fade_text box first">
@@ -44,7 +50,10 @@ function Home() {
             </p>
           </div>
         </section>
-        <section className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between first">
+        <section
+          ref={targetRef}
+          className="sm:flex gap-4 sm:mt-[244px] mt-16 m-auto items-start justify-between first"
+        >
           <ShortInfo
             brand="[1] Reimagining Bumble’s Profile Sharing Experience"
             // className="lg:w-[445px] sm:w-1/2 w-full "
