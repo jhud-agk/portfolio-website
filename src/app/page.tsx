@@ -2,6 +2,7 @@
 // import Loader from "@/component/Loader";
 import { useRef } from "react";
 import ShortInfo from "@/component/ShortInfo";
+import Head from "next/head";
 
 import Header from "@/component/Header";
 import BorderBody from "@/component/BorderBody";
@@ -19,8 +20,31 @@ function Home() {
     targetRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Jude Ejike",
+    url: "https://www.judeejike.com/",
+    image: "https://www.judeejike.com/path-to-profile-image.jpg",
+    jobTitle: "User Experience Designer",
+    worksFor: {
+      "@type": "Organization",
+      name: "Your Company Name",
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/judeejike",
+      "https://twitter.com/judeejike",
+      "https://github.com/judeejike",
+    ],
+  };
   return (
     <AnimationCon>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
       {/* <Loader /> */}
       <BorderBody className="h-[417px]" cross={false}>
         <Header func={scrollToTarget} />
